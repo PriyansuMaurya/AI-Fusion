@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="logo">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
       </header>
+      <body className="App-body">
+        <h1 className="blink">Coming Soon!</h1>
+        <div class="p-container">
+          <p>
+            Get ready for a single, comprehensive platform comprising a
+            collection of essential AI tools, prompts, and datasets. Join us as
+            we embark on this journey and receive updates through your email.
+          </p>
+        </div>
+
+        <div className="form">
+          <input
+            class="input"
+            type="text"
+            name="email"
+            placeholder="Email Address"
+          />
+          <button className="form-btn">Sign Up</button>
+        </div>
+      </body>
     </div>
   );
 }
