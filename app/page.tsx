@@ -14,7 +14,7 @@ export default function Home() {
   }, [theme])
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-col items-center justify-between ">
+    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-col items-center justify-between ">
     </main>
     
   )

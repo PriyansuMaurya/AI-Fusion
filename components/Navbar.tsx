@@ -2,13 +2,14 @@
 import React from "react";
 import { BsToggleOn, BsToggleOff, BsGithub } from "react-icons/bs";
 import { useThemeContext } from "@/app/context/store";
+import Link from "next/link";
 
 export default function Navbar() {
   const { theme, handleThemeSwitch } = useThemeContext();
 
   return (
     <div className="flex min-w-full h-20 flex-row items-center justify-between px-20 dark:bg-[--dark-bg] dark:text-white">
-      <div className="flex flex-row">
+      <Link className="flex flex-row" href={"/"}>
         <svg
           width="38"
           height="38"
@@ -24,7 +25,7 @@ export default function Navbar() {
         <h1 className="ml-2 text-3xl font-bold text-[color:var(--primary-color)]">
           AI Fusion
         </h1>
-      </div>
+      </Link>
       <div className="w-20  flex flex-row justify-between items-center">
         <div className="">
           <button onClick={handleThemeSwitch}>

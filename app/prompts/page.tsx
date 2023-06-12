@@ -1,8 +1,9 @@
+
 "use client"
 import { useEffect } from "react";
 import { useThemeContext } from "../context/store";
 
-export default function Tools() {
+export default function Prompts() {
   const {theme} = useThemeContext();
 
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function Tools() {
 
   return (
     <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-col items-center justify-between ">
-      tools
+        prompts
     </main>
     
   )
