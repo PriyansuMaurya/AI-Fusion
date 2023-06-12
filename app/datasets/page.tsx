@@ -1,6 +1,7 @@
 "use client"
 import { useEffect } from "react";
 import { useThemeContext } from "../context/store";
+import Card from "@/components/Card";
 
 export default function Datasets() {
   const {theme} = useThemeContext();
@@ -14,8 +15,8 @@ export default function Datasets() {
   }, [theme])
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-col items-center justify-between ">
-        Datasets
+    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-between px-36">
+      <Card datasets={true}/> 
     </main>
     
   )

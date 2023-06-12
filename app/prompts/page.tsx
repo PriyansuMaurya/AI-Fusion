@@ -2,6 +2,7 @@
 "use client"
 import { useEffect } from "react";
 import { useThemeContext } from "../context/store";
+import Card from "@/components/Card";
 
 export default function Prompts() {
   const {theme} = useThemeContext();
@@ -15,8 +16,12 @@ export default function Prompts() {
   }, [theme])
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-col items-center justify-between ">
-        prompts
+    <main className="flex min-h-screeni bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-between px-36">
+      <Card prompts={true}/>
+      <Card prompts={true}/>
+      <Card prompts={true}/>
+      <Card prompts={true}/>
+      <Card prompts={true}/>
     </main>
     
   )
