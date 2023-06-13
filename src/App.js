@@ -1,17 +1,44 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [email, setEmail] = useState("");
+
+  const sendEmail = async () => {
+    try {
+      const config = {
+        headers: {
+          "Context-type": "application/json",
+        },
+      };
+      const { data } = await axios.post(
+        "/api/email/register",
+        {
+          email: email,
+        },
+        config
+      );
+      setEmail("");
+
+      alert("Email Subscribed");
+    } catch (err) {
+      alert("Email Not Subscribed");
+      setEmail("");
+    }
+  };
+
   return (
-    <div className="App">
+    <body className="App">
       <header className="App-header">
         <div className="logo">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
       </header>
-      <body className="App-body">
+      <div className="App-body">
         <h1 className="blink">Coming Soon!</h1>
-        <div class="p-container">
+        <div className="p-container">
           <p>
             Get ready for a single, comprehensive platform comprising a
             collection of essential AI tools, prompts, and datasets. Join us as
@@ -21,15 +48,26 @@ function App() {
 
         <div className="form">
           <input
-            class="input"
-            type="text"
+            className="input"
+            type="email"
             name="email"
             placeholder="Email Address"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
-          <button className="form-btn">Sign Up</button>
+          <button
+            className="form-btn"
+            onClick={() => {
+              sendEmail();
+            }}
+          >
+            Sign Up
+          </button>
         </div>
-      </body>
-    </div>
+      </div>
+    </body>
   );
 }
 
