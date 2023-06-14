@@ -3,7 +3,7 @@ import { AiFillCopy } from "react-icons/ai";
 
 export default function Card({ tools, datasets }) {
   return (
-    <div className="w-96 h-60 p-3 mt-5 border rounded-xl flex flex-col">
+    <div className="w-[21rem] h-64 p-3 mt-3 border rounded-xl flex flex-col m-2">
       <h1 className="text-2xl font-semibold">ChatYouTube</h1>
       <p className="font-light mt-3 text-sm">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
@@ -19,10 +19,12 @@ export default function Card({ tools, datasets }) {
         </div>
       ) : (
         <div className="mt-3 flex">
-          <div className="border p-2 rounded">
-            <AiFillCopy className="" size={20} />
+          {/* <div className="border p-2 rounded"> */}
+            <button className="border p-1 rounded">
+              <AiFillCopy className="" size={20} />
+            </button>
           </div>
-        </div>
+        // </div>
       )}
     </div>
   );

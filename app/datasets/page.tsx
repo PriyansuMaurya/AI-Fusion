@@ -15,7 +15,8 @@ export default function Datasets() {
   }, [theme])
 
   return (
-    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-between px-36">
+    <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-row justify-center flex-wrap px-36 py-4">
+      <Card datasets={true}/> 
       <Card datasets={true}/> 
     </main>
     

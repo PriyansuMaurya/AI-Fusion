@@ -15,13 +15,13 @@ export default function Tools() {
   }, [theme])
 
   return (
-    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-between px-36">
+    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-center px-32 p-4">
+      <Card tools={true}/>
       <Card tools={true}/>
       <Card tools={true}/>
       <Card tools={true}/>
       <Card tools={true}/>
       <Card tools={true}/>
     </main>
-    
   )
 }

@@ -16,7 +16,8 @@ export default function Prompts() {
   }, [theme])
 
   return (
-    <main className="flex min-h-screeni bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-between px-36">
+    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row justify-center flex-wrap px-36 py-4">
+      <Card prompts={true}/>
       <Card prompts={true}/>
       <Card prompts={true}/>
       <Card prompts={true}/>
