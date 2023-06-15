@@ -19,13 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-          <ThemeContextProvider>
-            <Navbar />
-            <NavigationLinks />
-            {children}
-          </ThemeContextProvider>
-          <Footer />
+      <body className={inter.className + "m-10 bg-[--dark-bg] h-screen md:mx-10"}>
+        <ThemeContextProvider>
+          <Navbar />
+          <NavigationLinks />
+          {children}
+        </ThemeContextProvider>
+        <Footer />
       </body>
     </html>
   );
