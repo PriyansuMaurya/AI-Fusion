@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex bg-white h-[33rem] dark:bg-[--dark-bg] dark:text-white flex-col px-32">
-      <div className="flex flex-row justify-between items-center w-full h-80">
+      <div className="mt-16 flex justify-between items-center w-full h-80">
         <div className="w-96">
           <p className="text-3xl">
             Your{" "}

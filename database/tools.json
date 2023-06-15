@@ -1,0 +1,27 @@
+[
+  {
+    "title": "ChatGPT",
+    "description": "A conversational AI tool capable of assisting users in generating text, answering questions, providing explanations, offering creative suggestions, engaging in interactive conversations, and even writing code.",
+    "url": "https://chat.openai.com/",
+    "tags": [
+      "llm",
+      "audio",
+      "video",
+      "image-generator",
+      "ppt-generator",
+      "chat-bots"
+    ]
+  },
+  {
+    "title": "Bard",
+    "description": "Google Bard is a large language model that can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.",
+    "url": "https://bard.google.com/",
+    "tags": []
+  },
+  {
+    "title": "Bing Chat",
+    "description": "Bing Chat excels at assisting users with queries, providing relevant information, understanding and communicating fluently in multiple languages, generating diverse content, including code, and improving user-generated content, all while leveraging its real-time web extraction capability to ensure up-to-date answers directly from the web.",
+    "url": "https://www.bing.com/new",
+    "tags": []
+  }
+]

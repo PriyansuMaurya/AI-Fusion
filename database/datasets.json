@@ -1,0 +1,25 @@
+[
+  {
+    "title": "kaggle",
+    "description": "kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges. The platform enables data scientists and other developers to engage in running machine learning contests, write and share code, and to host datasets",
+    "url": "https://www.kaggle.com/",
+    "tags": [
+      "numeric",
+      "categorical",
+      "text",
+      "time-series",
+      "image",
+      "geospatial",
+      "graph",
+      "relational",
+      "streaming",
+      "biological"
+    ]
+  },
+  {
+    "title": "LAION",
+    "description": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit which makes open-sourced artificial intelligence models and datasets",
+    "url": "https://laion.ai/",
+    "tags": []
+  }
+]
