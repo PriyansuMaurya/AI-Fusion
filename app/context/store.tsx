@@ -1,9 +1,13 @@
 "use client"
-import { createContext, useContext, useState  } from "react"
+import { createContext, useContext, useState, ReactNode  } from "react"
 
 const ThemeContext = createContext({})
 
-export const ThemeContextProvider = ({children}) => {
+interface AllPropsFromLayout {
+  children?: ReactNode
+}
+
+export const ThemeContextProvider = ({children}: AllPropsFromLayout) => {
 
   const [theme, setTheme] = useState("dark");
 
