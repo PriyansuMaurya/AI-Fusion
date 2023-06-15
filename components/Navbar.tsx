@@ -3,9 +3,10 @@ import React from "react";
 import { BsToggleOn, BsToggleOff, BsGithub } from "react-icons/bs";
 import { useThemeContext } from "@/app/context/store";
 import Link from "next/link";
+import { NavbarContext } from "@/types";
 
 export default function Navbar() {
-  const { theme, handleThemeSwitch } = useThemeContext();
+  const { theme, handleThemeSwitch } : NavbarContext = useThemeContext();
 
   return (
     <div className="flex min-w-full h-20 flex-row items-center justify-between px-20 dark:bg-[--dark-bg] dark:text-white">
@@ -28,7 +29,7 @@ export default function Navbar() {
       </Link>
       <div className="w-20  flex flex-row justify-between items-center">
         <div className="">
-          <button onClick={handleThemeSwitch}>
+          <button onClick={() => handleThemeSwitch()}>
             {theme === "dark" ? (
               <BsToggleOn size={30} />
             ) : (

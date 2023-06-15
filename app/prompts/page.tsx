@@ -3,9 +3,10 @@
 import { useEffect } from "react";
 import { useThemeContext } from "../context/store";
 import Card from "@/components/Card";
+import { theme } from "@/types";
 
 export default function Prompts() {
-  const {theme} = useThemeContext();
+  const {theme}: theme  = useThemeContext();
 
   useEffect(() => {
     if (theme === "dark") {
@@ -17,12 +18,12 @@ export default function Prompts() {
 
   return (
     <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row justify-center flex-wrap px-36 py-4">
-      <Card prompts={true}/>
-      <Card prompts={true}/>
-      <Card prompts={true}/>
-      <Card prompts={true}/>
-      <Card prompts={true}/>
-      <Card prompts={true}/>
+      <Card prompts={true} tools={false} datasets={false}/>
+      <Card prompts={true} tools={false} datasets={false}/>
+      <Card prompts={true} tools={false} datasets={false}/>
+      <Card prompts={true} tools={false} datasets={false}/>
+      <Card prompts={true} tools={false} datasets={false}/>
+      <Card prompts={true} tools={false} datasets={false}/>
     </main>
     
   )

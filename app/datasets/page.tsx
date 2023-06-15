@@ -2,9 +2,10 @@
 import { useEffect } from "react";
 import { useThemeContext } from "../context/store";
 import Card from "@/components/Card";
+import { theme } from "@/types";
 
 export default function Datasets() {
-  const {theme} = useThemeContext();
+  const {theme} : theme = useThemeContext();
 
   useEffect(() => {
     if (theme === "dark") {
@@ -16,8 +17,8 @@ export default function Datasets() {
 
   return (
     <main className="flex min-h-screen bg-white dark:bg-[--dark-bg] dark:text-white flex-row justify-center flex-wrap px-36 py-4">
-      <Card datasets={true}/> 
-      <Card datasets={true}/> 
+      <Card datasets={true} tools={false} prompts={false}/> 
+      <Card datasets={true} tools={false} prompts={false}/> 
     </main>
     
   )

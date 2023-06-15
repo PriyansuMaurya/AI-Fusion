@@ -1,7 +1,8 @@
 import React from "react";
 import { AiFillCopy } from "react-icons/ai";
+import { CardsProp } from "@/types";
 
-export default function Card({ tools, datasets }) {
+export default function Card({ tools, prompts, datasets } : CardsProp) {
   return (
     <div className="w-[21rem] h-64 p-3 mt-3 border rounded-xl flex flex-col m-2">
       <h1 className="text-2xl font-semibold">ChatYouTube</h1>
