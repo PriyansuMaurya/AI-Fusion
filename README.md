@@ -10,7 +10,7 @@ AI Fusion is open source project made with intention to provide best AI Resource
 - Vercel
 
 ## Contributors
-For Contribution check out [Contribution](./CONTRIBUTION.md)
+For Contribution check out [Contribution](./CONTRIBUTING.md)
 
 ## Installation Guide
 
