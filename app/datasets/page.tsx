@@ -16,7 +16,7 @@ export default function Datasets() {
   }, [theme])
 
   return (
-    <main className="m-12 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap">
+    <main className="m-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
       <Card datasets={true} tools={false} prompts={false} />
       <Card datasets={true} tools={false} prompts={false} />
     </main>
