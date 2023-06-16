@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + "m-10 bg-[--dark-bg] h-screen md:mx-10"}>
+      <body className={inter.className + "m-10 bg-[--light-bg] dark:bg-[--dark-bg] h-screen space-y-auto md:mx-10"}>
         <ThemeContextProvider>
           <Navbar />
           <NavigationLinks />
