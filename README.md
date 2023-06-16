@@ -3,6 +3,15 @@
 
 AI Fusion is open source project made with intention to provide best AI Resources available online and provide extremely usefull AI prompts for everyone.
 
+## Tech Stack
+- Next Js
+- TypeScript
+- Tailwind
+- Vercel
+
+## Contributors
+For Contribution check out [Contribution](./CONTRIBUTION.md)
+
 ## Installation Guide
 
 Requirements
