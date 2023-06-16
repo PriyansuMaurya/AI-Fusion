@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useThemeContext } from "./context/store";
 import Image from "next/image";
+import PoweredByVercel from "../public/powered-by-vercel.svg";
 
 export default function Home() {
   const { theme } = useThemeContext();
@@ -15,27 +16,31 @@ export default function Home() {
   }, [theme]);
 
   return (
-    <main className="flex bg-white h-[33rem] dark:bg-[--dark-bg] dark:text-white flex-col px-32">
-      <div className="flex flex-row justify-between items-center w-full h-80">
-        <div className="w-96">
-          <p className="text-3xl">
+    <main className="m-3 font-sm flex flex-col bg-[--light-bg] dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg]">
+      <div className="m-5 flex flex-col items-center space-y-12 md:flex-row md:justify-between md:my-12 md:mx-9 ">
+        <div className="w-96  ">
+          <p className="m-5 text-2xl md:text-3xl md:max-mr-24 md:max-m-3">
             Your{" "}
-            <span className="bg-[color:var(--primary-color)] text-black">
+            <span className="px-1 bg-[color:var(--primary-color)] text-[--dark-bg]">
               ultimate destination
             </span>{" "}
             for streamlined access to a curated collection of powerful AI tools,
             prompts and datasets.
           </p>
         </div>
-        <Image src={"/undraw.png"} width={400} height={400} alt={""}></Image>
+        <div className="h-72 w-72 md:h-96 md:w-auto">
+          <Image src={"/undraw.png"} width={500} height={500} alt={""} />
+        </div>
       </div>
-      <div className="flex mt-10 justify-center items-center">
-        <p className="text-6xl" >Proudly Open Source</p>
+      <div className="mt-3 md:mt-8  flex flex-col items-center space-y-10">
+        <div className="mt-8 md:mt-10">
+          <p className="font-bold text-4xl text-center md:text-6xl" >Proudly Open-Source</p>
+        </div>
+        <div className="mx-auto w-52 md:w-52">
+          <Image src={PoweredByVercel} alt={"vercel"} width={380} height={480} />
+        </div>
+
       </div>
-      <div className="flex mt-10 justify-center items-center">
-        <Image src={"/vercel.png"} alt={"vercel"} width={180} height={280} ></Image>
-      </div>
-      
     </main>
   );
 }
