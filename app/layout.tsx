@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "AI-Fusion",
-  description: "AI-Prompt",
+  description: "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
 };
 
 export default function RootLayout({
