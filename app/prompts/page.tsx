@@ -17,7 +17,7 @@ export default function Prompts() {
   }, [theme])
 
   return (
-    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row justify-center flex-wrap px-36 py-4">
+    <main className="m-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
       <Card prompts={true} tools={false} datasets={false}/>
       <Card prompts={true} tools={false} datasets={false}/>
       <Card prompts={true} tools={false} datasets={false}/>

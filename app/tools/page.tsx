@@ -16,7 +16,7 @@ export default function Tools() {
   }, [theme])
 
   return (
-    <main className="flex bg-white dark:bg-[--dark-bg] dark:text-white flex-row flex-wrap justify-center px-32 p-4">
+    <main className="m-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
       <Card tools={true} prompts={false} datasets={false}/>
       <Card tools={true} prompts={false} datasets={false}/>
       <Card tools={true} prompts={false} datasets={false}/>
