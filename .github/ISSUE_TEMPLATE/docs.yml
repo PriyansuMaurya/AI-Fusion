@@ -1,0 +1,29 @@
+name: '🔖 Update Documentation'
+description: 'Use this form to provide suggestions on improving our documentation.'
+title: '[Docs]: <Name of the document you want to improve>'
+body:
+  - type: textarea
+    id: '3'
+    attributes:
+      label: Description
+      description: Provide a description of the document and highlight its features.
+  - type: textarea
+    id: '15'
+    attributes:
+      label: Attach Screenshot (if applicable)
+  - type: textarea
+    attributes:
+      label: Proposed Changes (optional)
+    validations:
+      required: true
+  - type: checkboxes
+    id: '1'
+    attributes:
+      label: Checklist
+      options:
+        - label: 'I have reviewed the existing issues.'
+          required: true
+        - label: 'I have read the [Contributing Guidelines](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md).'
+          required: true
+        - label: 'I am willing to work on this issue (optional).'
+          required: false

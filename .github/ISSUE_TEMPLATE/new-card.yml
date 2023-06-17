@@ -1,0 +1,40 @@
+name: 🃏 New Card
+description: Template for adding a new card
+title: '[Add]: <Name the site you wanna add>'
+body:
+  - type: input
+    id: '45'
+    attributes:
+      label: Site URL
+      description: Provide a complete and valid URL.
+    validations:
+      required: true
+  - type: textarea
+    id: '3'
+    attributes:
+      label: Description
+      description: Describe the provided site and highlight its features.
+    validations:
+      required: true
+  - type: dropdown
+    id: '2'
+    attributes:
+      label: Category
+      description: Select the category in which you want to add the card.
+      options:
+        - Tools 🔧
+        - Prompts 📄
+        - Datasets 📊
+    validations:
+      required: true
+  - type: checkboxes
+    id: '1'
+    attributes:
+      label: Checklist
+      options:
+        - label: 'I have checked the existing issues.'
+          required: true
+        - label: 'I have read the [Contributing Guidelines](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md).'
+          required: true
+        - label: 'I am willing to work on this issue (optional).'
+          required: false
