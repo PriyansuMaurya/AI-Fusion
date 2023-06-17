@@ -1,0 +1,39 @@
+name: '🐞 Bug Report'
+description: Template for bug report
+title: '[Bug]: <provide a brief description here>'
+body:
+  - type: textarea
+    id: '3'
+    attributes:
+      label: Description
+      description: Please provide a clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: '4'
+    attributes:
+      label: Attach Screenshots (if applicable)
+  - type: dropdown
+    id: '2'
+    attributes:
+      label: Which browser are you using when experiencing the issue?
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Brave
+        - Microsoft Edge
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: '1'
+    attributes:
+      label: Checklist
+      options:
+        - label: 'I have checked for existing issues related to this problem.'
+          required: true
+        - label: 'I have read the [Contributing Guidelines](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md).'
+          required: true
+        - label: 'I am willing to work on this issue (optional).'
+          required: false
