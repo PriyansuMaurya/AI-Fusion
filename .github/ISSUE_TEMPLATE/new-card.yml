@@ -1,6 +1,7 @@
 name: 🃏 New Card
 description: Template for adding a new card
 title: '[Add]: <Name the site you wanna add>'
+labels: ['good first issue','card']
 body:
   - type: input
     id: '45'
