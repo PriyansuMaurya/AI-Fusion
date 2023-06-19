@@ -23,5 +23,35 @@
     "description": "Bing Chat excels at assisting users with queries, providing relevant information, understanding and communicating fluently in multiple languages, generating diverse content, including code, and improving user-generated content, all while leveraging its real-time web extraction capability to ensure up-to-date answers directly from the web.",
     "url": "https://www.bing.com/new",
     "tags": []
+
+  },
+  {
+    "title": "Adobe Podcast",
+    "description": "Adobe Podcast is a web-based audio recording and editing tool that utilizes artificial intelligence (AI) to enhance the quality of audio recordings. It offers a range of features that make it a powerful tool for podcasters. Additionally, it allows for remote recording and provides automatic transcription capabilities.",
+    "url": "https://podcast.adobe.com/",
+    "tags": ["voice","audio","podcast"]
+
+  },
+  {
+    "title": "Looka",
+    "description": "Looka is an AI-powered logo design platform that allows users to create professional logos with ease. It provides a simple and intuitive interface, along with a vast library of design elements, fonts, and color palettes to choose from. Looka's intelligent algorithms generate customized logo options based on user preferences, making it a valuable tool for businesses and individuals looking for high-quality branding.",
+    "url": "https://www.looka.com/",
+    "tags": ["logo","design","brand","logo-generator"]
+
+  },
+  {
+    "title": "Github Copilot",
+    "description": "Copilot is an AI-powered code completion tool developed by GitHub in collaboration with OpenAI. It uses machine learning models to assist developers by suggesting code snippets and completing lines of code as they write. With Copilot, developers can increase their productivity, save time, and gain insights from its extensive knowledge base, which includes code from popular open-source projects.",
+    "url": "https://marketplace.visualstudio.com/items?itemName=GitHub.copilotvs",
+    "tags": ["extension","vscode","code-generator","code","generation"]
+
+  },
+  {
+    "title": "Dall-E",
+    "description": "DALL·E is an advanced image generation model developed by OpenAI. It uses a combination of deep learning and generative adversarial networks (GANs) to create unique and highly realistic images from textual descriptions. DALL·E can understand and interpret written prompts to generate corresponding images, often with surprising and imaginative results. This groundbreaking AI technology opens up new possibilities for creative expression, visual storytelling, and artistic exploration.",
+    "url": "https://openai.com/dall-e-2",
+    "tags": ["image","generation","GAN","image=generator"]
+
   }
+  
 ]
