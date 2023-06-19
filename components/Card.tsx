@@ -29,6 +29,7 @@ export default function Card({
             className="font-bold p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
             href={url}
             target="_blank"
+            rel="noopener"
           >
             GO TO SITE
           </a>
