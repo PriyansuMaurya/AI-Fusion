@@ -21,5 +21,43 @@
     "description": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit which makes open-sourced artificial intelligence models and datasets",
     "url": "https://laion.ai/",
     "tags": []
+  },
+  {
+    "title": "Open Image Dataset",
+    "description": "The Open Images Dataset by Google is a collection of millions of labeled images that can be used for computer vision tasks. It includes images of different things like objects, scenes, and activities, and each image has annotations to describe what's in it. The dataset is regularly updated and can be used for tasks like recognizing objects in images or understanding what's happening in a scene. It's widely used by researchers and developers to train and evaluate computer vision models.",
+    "url": "https://storage.googleapis.com/openimages/web/index.html",
+    "tags": [
+      "image",
+      "categorical"
+    ]
+  },
+  {
+    "title": "Awesome Public Datasets",
+    "description": "Awesome Public Datasets is a curated list of publicly available datasets across various domains and disciplines. It is hosted on GitHub and maintained by the community. The repository contains a collection of links to high-quality datasets that are freely accessible for research, analysis, and other purposes.",
+    "url": "http://www.github.com/awesomedata/awesome-public-datasets",
+    "tags": ["numeric",
+    "text",
+    "time-series",
+    "categorical",
+    "image",
+    "geospatial",
+    "relational",
+    "genomic"
+  ]
+  },
+  {
+    "title": "AWS Open Data Registry",
+    "description": "The AWS Open Data Registry is a platform provided by Amazon Web Services (AWS) that offers access to a wide range of publicly available datasets. These datasets cover various domains such as climate, healthcare, finance, and more. The registry makes it easier for users to discover and access these datasets, which can be used for research, analysis, and building applications. AWS provides tools and services to help users efficiently process and analyze these datasets in the cloud.",
+    "url": "https://registry.opendata.aws/",
+    "tags": [
+      "numeric",
+      "text",
+      "time-series",
+      "categorical",
+      "image",
+      "geospatial",
+      "relational",
+      "genomic"
+    ]
   }
 ]
