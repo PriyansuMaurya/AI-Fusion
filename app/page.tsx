@@ -37,10 +37,18 @@ export default function Home() {
           <p className="font-bold text-4xl text-center md:text-6xl" >Proudly Open-Source</p>
         </div>
         <div className="mx-auto w-52 md:w-52 lg:w-64">
-          <Image src={PoweredByVercel} alt={"vercel"} width={380} height={480} />
+          <a
+            className=""
+            href={"https://vercel.com/?utm_source=discordjs&utm_campaign=oss"}
+            target="_blank"
+            rel="noopener"
+          >
+            <Image src={PoweredByVercel} alt={"vercel"} width={380} height={480} />
+          </a>
         </div>
 
       </div>
     </main>
   );
 }
+
