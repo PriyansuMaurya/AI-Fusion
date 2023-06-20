@@ -25,7 +25,7 @@
     },
     {
       "title": "SEO Expert",
-      "description": "You are an SEO expert. Provide me with count long-tail, high-volume, low-difficulty keywords for topic of interest as if you’re a content marketer.",
+      "description": "You are an SEO expert. Provide me with <count> long-tail, high-volume, low-difficulty keywords for <topic-of-interest> as if you’re a content marketer.",
       "url": "",
       "tags": ["terminal","seo","expert","keywords"]
     }
