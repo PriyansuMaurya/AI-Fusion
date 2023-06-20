@@ -1,46 +1,75 @@
-# Contributing To AI-Fusion 😁
+# Run & contribute to this project locally
 
-We want to make contributing to this project as easy and transparent as possible. We always welcome your pull requests, But before starting please read following rules. 📃
+> You can run & contribute to this project by following the steps below:
 
-> ⚠️ **Note** <br>
-> Always first get yourself issue assign before contributing!
+### 1. Fork this repository
+![fork](https://github.com/PriyansuMaurya/AI-Fusion/assets/88102392/a6097220-a2ef-4d41-9751-af02405fc64e)
 
-## Pull Requests
+### 2. Clone the forked repository to your local machine
 
-If you're new, we encourage you to take a look at issues tagged with [good first issue](https://github.com/PriyansuMaurya/AI-Fusion/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+    git clone https://github.com/USERNAME/AI-Fusion
 
-## ➡️ Step 1 - Visit Issues page
-By visiting [issues](https://github.com/PriyansuMaurya/AI-Fusion/issues) you will get idea good about what current bugs and features.
+### 3. Navigate to the project directory
 
-## ➡️ Step 2 - Fork the Project
-Click the fork button at the top, By forking you create your own version of this project, where you can experiment with the project.
+    cd AI-Fusion
 
-## ➡️ Step 3 - Set Up Project Locally 
+### 4. Install dependencies
 
-You can run this commnand to setup development locally
-```bash
-git clone <Your Forked Repository URL>
-cd AI-Fusion
-npm i
-npm run dev
-```
+    npm ci
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Run the project
 
-Or your can use github CodeSpaces, Just click Code button in your forked repo and click on CodeSpaces tab and click on create codespaces on main
+    npm run dev
 
-And you are good to go.
+### 6. Create a new branch
 
-## ➡️ Step 4 - Get yourself a Issues assign
-Before Starting to implement new feature or fixing a bug alway get it assign by admins. 
+    git checkout -b <your_branch_name>
 
-It will be good both we maintainers and contributors, we will able to track who is working on which isssue.
+### 7. Make changes in the source code
 
-Always create a new branch to work with.
+### 8. Stage your changes
 
-## ➡️ Step 5 - Add Issues 
-Know you have a good understanding about the project now you can create issues about adding new feature or if you found any bug while working with code.
+    git add --all
 
-## ➡️ Best Way You can Contribute
-You can add resource to json file in database folder, But make sure that the resources you are adding is high quality and really impact the knowledge of the viewer.
+### 9. Commit your changes
 
+    git commit -m "<your_commit_message>"
+
+> **Note**: Add a proper commit message that describes the changes you have made. Follow this [guide](https://www.conventionalcommits.org/en/v1.0.0/) to write good commit messages.
+
+### 10. Add upstream url
+
+    git remote add upstream https://github.com/PriyansuMaurya/AI-Fusion
+
+### 11. Push your changes
+
+    git push -u origin <your_branch_name>
+
+### 12. Create a pull request
+
+> **Note**: Add a proper title and description to your pull request that describes the changes you have made. Wait for the maintainer to review your pull request.
+
+### 13. Congratulations! 🎉 you've made your contribution to AI-Fusion project.
+
+# Add new data
+
+Follow above guide to fork, clone, run in local machine after that follow below steps to add new data.
+
+### 1. Add new data in `database` folder (database folder is in root directory)
+
+> there are three `json` file according to their category. Add new data in respective file.
+
+### 2. Follow the json code format to add new data
+
+    {
+    "title": "Name of the product",
+    "description": "Description of the product",
+    "url": "URL of the product",
+    "tags": [ "tag1", "tag2" ]
+    },
+
+### 3. Now stage, commit and push your changes
+
+### 4. Create a pull request
+
+### 5. Congratulations! 🎉 you've made your contribution to AI-Fusion project.
