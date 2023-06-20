@@ -50,7 +50,7 @@
     "title": "Dall-E",
     "description": "DALL·E is an advanced image generation model developed by OpenAI. It uses a combination of deep learning and generative adversarial networks (GANs) to create unique and highly realistic images from textual descriptions. DALL·E can understand and interpret written prompts to generate corresponding images, often with surprising and imaginative results. This groundbreaking AI technology opens up new possibilities for creative expression, visual storytelling, and artistic exploration.",
     "url": "https://openai.com/dall-e-2",
-    "tags": ["image","generation","GAN","image-generator"]
+    "tags": ["image","GAN","image-generator"]
 
   }
   
