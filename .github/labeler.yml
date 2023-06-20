@@ -1,0 +1,4 @@
+card:
+  - 'database/*'
+wait for reviewers:
+  - '**/*'
