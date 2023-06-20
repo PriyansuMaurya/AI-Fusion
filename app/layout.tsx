@@ -33,31 +33,23 @@ export default function RootLayout({
         <meta
           property="og:image"
           itemProp="image"
-          content="/ai_fusion_preview.png"
+          content="https://aifusion.vercel.app/ai_fusion_preview.png"
         />
 
         {/* twitter meta tags */}
 
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@PrianshuMaurya" />
+        <meta name="twitter:creator" content="@PrianshuMaurya" />
         <meta property="twitter:domain" content="https://aifusion.vercel.app" />
         <meta property="twitter:url" content="https://aifusion.vercel.app" />
-        <meta
-          name="twitter:title"
-          content="AI-Fusion"
-        />
+        <meta name="twitter:title" content="AI-Fusion" />
         <meta
           name="twitter:description"
           content="AI Fusion is your ultimate destination for streamlined access to a curated collection of powerful AI tools and prompts. With direct links to a variety of resources, our website eliminates the hassle and empowers you to effortlessly enhance your productivity."
         />
-        <meta
-          name="twitter:image"
-          content="/ai_fusion_preview.png"
-        />
-        <meta
-          data-rh="true"
-          name="twitter:image:alt"
-          content="AI-Fusion"
-        />
+        <meta name="twitter:image" content="https://aifusion.vercel.app/ai_fusion_preview.png" />
+        <meta data-rh="true" name="twitter:image:alt" content="AI-Fusion" />
       </head>
       <body
         className={
