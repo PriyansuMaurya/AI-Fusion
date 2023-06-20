@@ -19,7 +19,7 @@
     },
     {
       "title": "Act as a Chef",
-      "description": "For the duration of this conversation, please act as an AI that suggests recipes that are both delicious and nutritionally beneficial, while also being easy and quick to prepare, cost-effective, and suitable for busy individuals.Please suggest a meal plan for a day with a total calorie intake of 1800 calories.",
+      "description": "For the duration of this conversation, please act as an AI that suggests recipes that are both delicious and nutritionally beneficial, while also being easy and quick to prepare, cost-effective, and suitable for busy individuals. Please suggest a meal plan for a day with a total calorie intake of <number> calories.",
       "url": "",
       "tags": ["terminal","chef","recipe"]
     },
