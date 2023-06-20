@@ -1,10 +1,13 @@
-# Run & contribute this project locally
+# Run & contribute to this project locally
 
-> you can run & contribute to this project by following the steps below:
+> You can run & contribute to this project by following the steps below:
 
 ### 1. Fork this repository
+![fork](https://github.com/PriyansuMaurya/AI-Fusion/assets/88102392/a6097220-a2ef-4d41-9751-af02405fc64e)
 
-### 2. Clone the fork repository to your local machine
+### 2. Clone the forked repository to your local machine
+
+    git clone https://github.com/USERNAME/AI-Fusion
 
 ### 3. Navigate to the project directory
 
@@ -22,7 +25,7 @@
 
     git checkout -b <your_branch_name>
 
-### 7. Make changes in source code
+### 7. Make changes in the source code
 
 ### 8. Stage your changes
 
