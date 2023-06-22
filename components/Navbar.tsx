@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { BsGithub } from "react-icons/bs";
-import { MdToggleOn,MdToggleOff } from "react-icons/md";
+import { BsGithub, BsToggleOn } from "react-icons/bs";
 import { useThemeContext } from "@/app/context/store";
 import Link from "next/link";
 import { NavbarContext } from "@/types";
@@ -20,9 +19,9 @@ export default function Navbar() {
         <div className="">
           <button onClick={() => handleThemeSwitch()}>
             {theme === "dark" ? (
-              <MdToggleOn size={42} />
+              <BsToggleOn size={30} />
             ) : (
-              <MdToggleOff size={42} color="#22C55E"/>
+              <BsToggleOn size={30} className="text-[color:var(--primary-color)] rotate-180"/>
             )}
           </button>
         </div>
