@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { BsToggleOn, BsToggleOff, BsGithub } from "react-icons/bs";
+import { BsGithub, BsToggleOn } from "react-icons/bs";
 import { useThemeContext } from "@/app/context/store";
 import Link from "next/link";
 import { NavbarContext } from "@/types";
@@ -21,7 +21,7 @@ export default function Navbar() {
             {theme === "dark" ? (
               <BsToggleOn size={30} />
             ) : (
-              <BsToggleOff size={30} />
+              <BsToggleOn size={30} className="text-[color:var(--primary-color)] rotate-180"/>
             )}
           </button>
         </div>
