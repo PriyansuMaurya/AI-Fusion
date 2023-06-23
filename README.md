@@ -1,10 +1,8 @@
-# AI Fusion - Your One-Stop Destination for All AI Resources!
-
-Welcome👋
-
-AI Fusion is your ultimate destination for streamlined access to a curated collection of powerful AI tools and prompts. With direct links to a variety of resources, our website eliminates the hassle and empowers you to effortlessly enhance your productivity.
+# AI Fusion - Your One-Stop Destination for Inclusive AI Resources!
 
 ![banner](./github-assets/banner.jpeg)
+
+# Welcome👋
 
 > Here is the preview of the website https://aifusion.vercel.app
 
@@ -24,6 +22,14 @@ Contributions are welcome! If you have any ideas, suggestions, or bug fixes, ple
 
 - Go through the [CONTRIBUTING.md](/CONTRIBUTING.md) file, where all the guidelines have been mentioned that will guide you to make your contribution.
 - Do check out the [project issue tracker](https://github.com/PriyansuMaurya/AI-Fusion/issues) section.
+
+## Contribute Easily with Gitpod 🚀
+
+Simply click the button below, and Gitpod will take care of everything, ensuring that all the necessary dependencies are installed, the project is running, and you are ready to contribute.
+
+[![Gitpod Ready-to-Code](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/PriyansuMaurya/AI-Fusion)
+
+Enjoy the simplicity and ease of contributing with Gitpod!
 
 ## 🫂 Contributors
 
