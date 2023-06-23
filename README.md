@@ -59,7 +59,7 @@ When you are ready to start work on an issue:
 
 Simply click the button below, and Gitpod will take care of everything, ensuring that all the necessary dependencies are installed, the project is running, and you are ready to contribute.
 
-[![Gitpod Ready-to-Code](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/PriyansuMaurya/AI-Fusion)
+[![Gitpod Ready-to-Code](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git)
 
 Enjoy the simplicity and ease of contributing with Gitpod!
 
