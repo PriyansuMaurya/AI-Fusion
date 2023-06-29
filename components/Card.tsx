@@ -19,7 +19,7 @@ export default function Card({
       key={id}
       className="w-[20.5rem] h-64 p-6 mt-3 border border-[--dark-bg] dark:border-[--light-bg]  rounded-3xl flex flex-col m-3 text-[--dark-bg] dark:text-[--light-bg]"
     >
-      <h1 className="text-2xl font-semibold">{title}</h1>
+      <h1 className="text-2xl font-semibold line-clamp-1">{title}</h1>
       <span className="font-light mt-3 text-sm line-clamp-5">
         {description}
       </span>
