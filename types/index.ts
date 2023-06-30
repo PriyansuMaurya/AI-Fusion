@@ -28,30 +28,23 @@ export interface CardsProp {
   prompts?: boolean;
   datasets?: boolean;
   data: Data;
-  setModalData?: Dispatch<SetStateAction<ModalData>>;
+  setModalData?: Dispatch<SetStateAction<Data>>;
   setModalActive?: Dispatch<SetStateAction<boolean>>;
 }
 
 export interface Data {
-  title: string;
-  description: string;
-  url: string;
-  tags: string[];
+  title?: string;
+  description?: string;
+  url?: string;
+  tags?: string[];
 }
 
 // Modal
 
-export interface ModalData {
-  title?: string;
-  description?: string;
-  url?: string;
-  tags?: string[];
-}
-
 export interface ModalProps {
-  title?: string;
-  description?: string;
-  url?: string;
-  tags?: string[];
+  data: Data;
+  tools?: boolean;
+  prompts?: boolean;
+  datasets?: boolean;
   setModalActive: Dispatch<SetStateAction<boolean>>;
 }

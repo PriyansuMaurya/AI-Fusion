@@ -2,14 +2,14 @@
 import { useState, useEffect } from "react";
 import { useThemeContext } from "../context/store";
 import Card from "@/components/Card";
-import { theme, Data, ModalData } from "@/types";
+import { theme, Data } from "@/types";
 import prompts from "../../database/prompts.json";
 import Modal from "@/components/Modal";
 
 export default function Prompts() {
   // Modal State Data
   const [modalActive, setModalActive] = useState(false);
-  const [modalData, setModalData] = useState<ModalData>({});
+  const [modalData, setModalData] = useState<Data>({});
 
   // Dark Mode
   const { theme }: theme = useThemeContext();
@@ -35,7 +35,7 @@ export default function Prompts() {
           />
         ))}
       </main>
-      {modalActive && <Modal {...modalData} setModalActive={setModalActive} />}
+      {modalActive && <Modal data={modalData} prompts={true} setModalActive={setModalActive} />}
     </div>
   );
 }

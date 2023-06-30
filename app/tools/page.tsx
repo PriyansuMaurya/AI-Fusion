@@ -4,7 +4,6 @@ import { useThemeContext } from "../context/store";
 import Card from "@/components/Card";
 import { theme, Data } from "@/types";
 import tools from "../../database/tools.json";
-import { ModalData } from "@/types";
 import Modal from "@/components/Modal";
 
 interface Tool {
@@ -16,7 +15,7 @@ interface Tool {
 
 export default function Tools() {
   const [modalActive, setModalActive] = useState(false);
-  const [modalData, setModalData] = useState<ModalData>({});
+  const [modalData, setModalData] = useState<Data>({});
 
   // Dark mode
   const { theme }: theme = useThemeContext();
@@ -36,7 +35,7 @@ export default function Tools() {
           <Card id={index} tools={true} data={tool} setModalActive={setModalActive} setModalData={setModalData} />
         ))}
       </main>
-      {modalActive && <Modal {...modalData} setModalActive={setModalActive} />}
+      {modalActive && <Modal data={modalData} tools={true} setModalActive={setModalActive} />}
     </div>
   );
 }

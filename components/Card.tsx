@@ -29,28 +29,22 @@ export default function Card({
       <span className="font-light mt-3 text-sm line-clamp-5">
         {description}
       </span>
-      {tools || datasets ? (
-        <div className="mt-8 flex flex-row justify-between items-center">
-          <a
-            className="font-bold p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
-            href={url}
-            target="_blank"
-            rel="noopener"
-          >
-            GO TO SITE
-          </a>
-
+      <div className="mt-6 flex justify-between">
+        {tools || datasets ? (
           <button
-            onClick={handleReadMore}
-            className="bg-[--primary-color] text-black p-1.5 rounded-2xl font-bold"
+            className="font-bold p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
           >
-            Read More
+            <a
+              className=""
+              href={url}
+              target="_blank"
+              rel="noopener"
+            >
+              GO TO SITE
+            </a>
           </button>
-        </div>
-      ) : (
-        <div className="mt-6 flex flex-row justify-between">
-          {/* <div className="border p-2 rounded"> */}
-          <CopyToClipboard text={description}>
+        ) : (
+          <CopyToClipboard CopyToClipboard text={description}>
             <button
               onClick={() => {
                 setCopied(true);
@@ -67,14 +61,15 @@ export default function Card({
               )}
             </button>
           </CopyToClipboard>
-          <button
-            onClick={handleReadMore}
-            className="bg-[--primary-color] text-black px-2 rounded-2xl font-bold"
-          >
-            Read More
-          </button>
-        </div>
-      )}
-    </div>
+        )}
+        <button
+          onClick={handleReadMore}
+          className="font-bold p-1 text-xs bg-[--primary-color] border border-[--primary-color] text-[--dark-bg] py-[8px] px-4 hover:bg-[--light-bg] dark:hover:text-[--light-bg] hover:text-[--dark-bg] hover:border-[--dark-bg] dark:border-[--primary-color] dark:hover:border-[--light-bg]  dark:hover:bg-[--dark-bg]  rounded-3xl"
+        >
+          READ MORE
+        </button>
+      </div>
+
+    </div >
   );
 }

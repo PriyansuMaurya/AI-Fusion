@@ -4,13 +4,12 @@ import { useThemeContext } from "../context/store";
 import Card from "@/components/Card";
 import { theme, Data } from "@/types";
 import datasets from "../../database/datasets.json";
-import { ModalData } from "@/types";
 import Modal from "@/components/Modal";
 
 export default function Datasets() {
   //Modal
   const [modalActive, setModalActive] = useState(false);
-  const [modalData, setModalData] = useState<ModalData>({});
+  const [modalData, setModalData] = useState<Data>({});
 
   // Dark Mode
   const { theme }: theme = useThemeContext();
@@ -30,8 +29,7 @@ export default function Datasets() {
           <Card id={index} datasets={true} data={dataset} setModalActive={setModalActive} setModalData={setModalData} />
         ))}
       </main>
-
-      {modalActive && <Modal {...modalData} setModalActive={setModalActive} />}
+      {modalActive && <Modal data={modalData} datasets={true} setModalActive={setModalActive} />}
     </div>
   );
 }
