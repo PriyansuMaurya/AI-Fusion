@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FiCopy, FiCheck } from "react-icons/fi";
 import { CardsProp } from "@/types";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import { describe } from "node:test";
 
 export default function Card({
   id,
@@ -10,9 +9,16 @@ export default function Card({
   prompts,
   datasets,
   data,
+  setModalData,
+  setModalActive,
 }: CardsProp) {
   const { title, description, url, tags } = data;
   const [copied, setCopied] = useState(false);
+
+  function handleReadMore() {
+    setModalActive(true);
+    setModalData(data);
+  }
 
   return (
     <div
@@ -24,7 +30,7 @@ export default function Card({
         {description}
       </span>
       {tools || datasets ? (
-        <div className="mt-8">
+        <div className="mt-8 flex flex-row justify-between items-center">
           <a
             className="font-bold p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
             href={url}
@@ -33,9 +39,16 @@ export default function Card({
           >
             GO TO SITE
           </a>
+
+          <button
+            onClick={handleReadMore}
+            className="bg-[--primary-color] text-black p-1.5 rounded-2xl font-bold"
+          >
+            Read More
+          </button>
         </div>
       ) : (
-        <div className="mt-6">
+        <div className="mt-6 flex flex-row justify-between">
           {/* <div className="border p-2 rounded"> */}
           <CopyToClipboard text={description}>
             <button
@@ -54,6 +67,12 @@ export default function Card({
               )}
             </button>
           </CopyToClipboard>
+          <button
+            onClick={handleReadMore}
+            className="bg-[--primary-color] text-black px-2 rounded-2xl font-bold"
+          >
+            Read More
+          </button>
         </div>
       )}
     </div>

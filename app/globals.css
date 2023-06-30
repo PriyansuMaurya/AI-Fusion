@@ -9,26 +9,24 @@
   --primary-color: #22C55E;
 }
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Scroll Bar */
+/* width */
+.ScrollBar::-webkit-scrollbar {
+    width: 8px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  
+/* Track */
+.ScrollBar::-webkit-scrollbar-track {
+    background: transparent;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  
+/* Handle */
+.ScrollBar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+.ScrollBar::-webkit-scrollbar-thumb:hover {
+    background: rgb(210, 210, 210);
+}

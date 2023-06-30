@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Dispatch, ReactNode, SetStateAction } from "react";
 
 export interface themeContext {
   theme: string;
@@ -28,6 +28,8 @@ export interface CardsProp {
   prompts?: boolean;
   datasets?: boolean;
   data: Data;
+  setModalData?: Dispatch<SetStateAction<ModalData>>;
+  setModalActive?: Dispatch<SetStateAction<boolean>>;
 }
 
 export interface Data {
@@ -35,4 +37,21 @@ export interface Data {
   description: string;
   url: string;
   tags: string[];
+}
+
+// Modal
+
+export interface ModalData {
+  title?: string;
+  description?: string;
+  url?: string;
+  tags?: string[];
+}
+
+export interface ModalProps {
+  title?: string;
+  description?: string;
+  url?: string;
+  tags?: string[];
+  setModalActive: Dispatch<SetStateAction<boolean>>;
 }
