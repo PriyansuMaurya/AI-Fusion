@@ -28,5 +28,8 @@
   
 /* Handle on hover */
 .ScrollBar::-webkit-scrollbar-thumb:hover {
-    background: rgb(210, 210, 210);
+    background: var(--dark-bg);
+}
+.dark .ScrollBar::-webkit-scrollbar-thumb:hover {
+    background: var(--light-bg);
 }

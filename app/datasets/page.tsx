@@ -24,7 +24,7 @@ export default function Datasets() {
 
   return (
     <div className="flex">
-      <main className="m-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
+      <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
         {datasets.map((dataset: Data, index: number) => (
           <Card id={index} datasets={true} data={dataset} setModalActive={setModalActive} setModalData={setModalData} />
         ))}

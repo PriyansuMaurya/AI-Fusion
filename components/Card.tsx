@@ -29,10 +29,10 @@ export default function Card({
       <span className="font-light mt-3 text-sm line-clamp-5">
         {description}
       </span>
-      <div className="mt-6 flex justify-between">
+      <div className="mt-6 flex justify-between items-center">
         {tools || datasets ? (
           <button
-            className="font-bold p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
+            className="font-bold max-h-9 text-center p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
           >
             <a
               className=""
@@ -64,12 +64,11 @@ export default function Card({
         )}
         <button
           onClick={handleReadMore}
-          className="font-bold p-1 text-xs bg-[--primary-color] border border-[--primary-color] text-[--dark-bg] py-[8px] px-4 hover:bg-[--light-bg] dark:hover:text-[--light-bg] hover:text-[--dark-bg] hover:border-[--dark-bg] dark:border-[--primary-color] dark:hover:border-[--light-bg]  dark:hover:bg-[--dark-bg]  rounded-3xl"
+          className="font-bold max-h-9 text-center p-1 text-xs bg-[--primary-color] border border-[--primary-color] text-[--dark-bg] py-[8px] px-4 hover:bg-[--light-bg] dark:hover:text-[--light-bg] hover:text-[--dark-bg] hover:border-[--dark-bg] dark:border-[--primary-color] dark:hover:border-[--light-bg]  dark:hover:bg-[--dark-bg]  rounded-3xl"
         >
           READ MORE
         </button>
       </div>
-
-    </div >
+    </div>
   );
 }

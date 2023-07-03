@@ -30,7 +30,7 @@ export default function Tools() {
 
   return (
     <div className="flex">
-      <main className="m-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
+      <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
         {tools.map((tool: Data, index: number) => (
           <Card id={index} tools={true} data={tool} setModalActive={setModalActive} setModalData={setModalData} />
         ))}
