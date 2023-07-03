@@ -75,17 +75,16 @@ export default function Modal({
   return (
     <>
       <div className="md:w-1/2 block md:my-14 md:py-1 z-10 md:z-0 md:relative md:hidden">
-        <div onClick={() => setModalActive(false)} className="fixed inset-0 bg-slate-800 bg-opacity-75 transition-opacity">
-          <div className=" fixed inset-0 z-10 md:z-0 overflow-y-auto  ">
-            <div className=" flex min-h-full items-end justify-center text-center md:items-center md:p-0">
-              <div className="relative md:sticky bg-[--light-bg] dark:bg-[--dark-bg]  px-4 pb-4 pt-5 md:p-6 md:pb-4 mt-56 transform overflow-hidden md:overflow-x-hidden md:overflow-y-auto border border-[--dark-bg] dark:border-[--light-bg] rounded-t-3xl md:rounded-3xl text-left transition-all md:my-8  md:max-w-lg md:w-96 md:h-[33.5rem]">
+        <div onClick={() => setModalActive(false)} className="fixed inset-0 bg-slate-800 bg-opacity-75 transition-opacity"></div>
+          <div className=" fixed inset-0 z-10 md:z-0 -mb-8 overflow-y-auto  ">
+            <div className=" flex min-h-full items-end justify-center  text-center md:items-center md:p-0">
+              <div className="relative md:sticky bg-[--light-bg] dark:bg-[--dark-bg] mx-4 px-4 pb-16 pt-5 md:p-6 md:pb-4 mt-56 transform overflow-hidden md:overflow-x-hidden md:overflow-y-auto border border-[--dark-bg] dark:border-[--light-bg] rounded-t-3xl md:rounded-3xl text-left transition-all md:my-8  md:max-w-lg md:w-96 md:h-[33.5rem]">
                 {mainContent}
               </div>
-            </div>
           </div>
         </div>
       </div>
-      <div className="w-1/2 hidden my-14 mx-11 py-1 relative md:block ">
+      <div className="w-1/2 hidden my-14 py-1 relative md:block">
         <div className="ScrollBar sticky top-10 w-96 h-[33.5rem] rounded-3xl p-5 border border-[--dark-bg] dark:text-[--light-bg] dark:border-[--light-bg] overflow-x-hidden">
           {mainContent}
         </div>
