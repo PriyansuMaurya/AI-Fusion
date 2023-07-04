@@ -4,7 +4,7 @@ import { useThemeContext } from "./context/store";
 import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import pageNotFound from "../public/page404.png";
+import pageNotFound from "../public/page404.svg";
 export default function NotFound() {
   // Dark Mode
   const { theme }: theme = useThemeContext();

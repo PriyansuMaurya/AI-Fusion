@@ -29,7 +29,7 @@ export default function Card({
       <span className="font-light mt-3 text-sm line-clamp-5">
         {description}
       </span>
-      <div className="mt-6 flex justify-between items-center">
+      <div className="sticky top-[100vh] flex justify-between items-center">
         {tools || datasets ? (
           <button
             className="font-bold max-h-9 text-center p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
