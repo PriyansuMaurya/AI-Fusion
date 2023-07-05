@@ -31,15 +31,8 @@ export default function Card({
       </span>
       <div className="sticky top-[100vh] flex justify-between items-center">
         {tools || datasets ? (
-          <button
-            className="font-bold max-h-9 text-center p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl"
-          >
-            <a
-              className=""
-              href={url}
-              target="_blank"
-              rel="noopener"
-            >
+          <button className="font-bold max-h-9 text-center p-1 text-xs border py-[8px] px-4 hover:bg-[--primary-color] border-[--dark-bg] dark:border-[--light-bg] rounded-3xl">
+            <a className="" href={url} target="_blank" rel="noopener">
               GO TO SITE
             </a>
           </button>
@@ -62,12 +55,16 @@ export default function Card({
             </button>
           </CopyToClipboard>
         )}
-        <button
-          onClick={handleReadMore}
-          className="font-bold max-h-9 text-center p-1 text-xs bg-[--primary-color] border border-[--primary-color] text-[--dark-bg] py-[8px] px-4 hover:bg-[--light-bg] dark:hover:text-[--light-bg] hover:text-[--dark-bg] hover:border-[--dark-bg] dark:border-[--primary-color] dark:hover:border-[--light-bg]  dark:hover:bg-[--dark-bg]  rounded-3xl"
-        >
-          READ MORE
-        </button>
+        {description.length > 210 ? (
+          <button
+            onClick={handleReadMore}
+            className="font-bold max-h-9 text-center p-1 text-xs bg-[--primary-color] border border-[--primary-color] text-[--dark-bg] py-[8px] px-4 hover:bg-[--light-bg] dark:hover:text-[--light-bg] hover:text-[--dark-bg] hover:border-[--dark-bg] dark:border-[--primary-color] dark:hover:border-[--light-bg]  dark:hover:bg-[--dark-bg]  rounded-3xl"
+          >
+            READ MORE
+          </button>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
