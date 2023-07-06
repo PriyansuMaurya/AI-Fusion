@@ -12,21 +12,31 @@ export default function Navbar() {
 
   return (
     <div className="flex min-w-full h-20 items-center justify-between  dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg] ">
-      <Link className="mx-5 max-w-sm my-4 h-auto w-40 md:w-96 md:max-w-xl" href={"/"}>
+      <Link
+        className="mx-5 max-w-sm my-4 h-auto w-40 md:w-96 md:max-w-xl"
+        href={"/"}
+      >
         <Image src={logo} alt={"AI Fusion"} width={180} height={280} />
       </Link>
       <div className="w-14 sm:w-20  flex flex-row justify-between items-center">
-        <div className="">
+        <div>
           <button onClick={() => handleThemeSwitch()}>
             {theme === "dark" ? (
-              <BsToggleOn size={30} />
+              <BsToggleOn title="Light mode" size={30} />
             ) : (
-              <BsToggleOn size={30} className="text-[color:var(--primary-color)] rotate-180"/>
+              <BsToggleOn
+                title="Dark mode"
+                size={30}
+                className="text-[color:var(--primary-color)] rotate-180"
+              />
             )}
           </button>
         </div>
-        <div className="relative hidden bottom-1  text-[--dark-bg] dark:text-[--light-bg]  hover:text-[color:var(--primary-color)]  transition md:block ">
-          <a href="https://github.com/PriyansuMaurya/AI-Fusion">
+        <div
+          title="Go to Github"
+          className="relative hidden bottom-1  text-[--dark-bg] dark:text-[--light-bg]  hover:text-[color:var(--primary-color)] dark:hover:text-[color:var(--primary-color)]   transition md:block "
+        >
+          <a href="https://github.com/PriyansuMaurya/AI-Fusion" target="_blank">
             <BsGithub size={25} />
           </a>
         </div>
