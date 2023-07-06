@@ -22,7 +22,7 @@ export default function Navbar() {
         <div>
           <button onClick={() => handleThemeSwitch()}>
             {theme === "dark" ? (
-              <BsToggleOn title="White mode" size={30} />
+              <BsToggleOn title="Light mode" size={30} />
             ) : (
               <BsToggleOn
                 title="Dark mode"
