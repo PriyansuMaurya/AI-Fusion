@@ -5,6 +5,11 @@ import Card from "@/components/Card";
 import { theme, Data } from "@/types";
 import tools from "../../database/tools.json";
 import Modal from "@/components/Modal";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tools"
+};
 
 interface Tool {
   // Define the interface for your tool object

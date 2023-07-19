@@ -8,7 +8,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI-Fusion",
+  template: "AI Fusion | %s",
+  default: "AI Fusion",
   description:
     "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
 };

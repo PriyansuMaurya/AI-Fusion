@@ -5,6 +5,13 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pageNotFound from "../public/page404.svg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "404"
+};
+
+
 export default function NotFound() {
   // Dark Mode
   const { theme }: theme = useThemeContext();

@@ -5,6 +5,11 @@ import Card from "@/components/Card";
 import { theme, Data } from "@/types";
 import datasets from "../../database/datasets.json";
 import Modal from "@/components/Modal";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Datasets"
+};
 
 export default function Datasets() {
   //Modal

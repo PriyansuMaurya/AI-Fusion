@@ -5,6 +5,11 @@ import Card from "@/components/Card";
 import { theme, Data } from "@/types";
 import prompts from "../../database/prompts.json";
 import Modal from "@/components/Modal";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Prompts"
+};
 
 export default function Prompts() {
   // Modal State Data
