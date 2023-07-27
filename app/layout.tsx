@@ -13,6 +13,17 @@ export const metadata = {
     "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
 };
 
+// https://github.com/PriyansuMaurya/AI-Fusion/releases/tag/v1.2.4-beta
+
+async function getCurrentVersion() {
+  const response = await fetch(
+    "https://api.github.com/repos/PriyansuMaurya/AI-Fusion/releases/latest"
+  );
+  const data = await response.json();
+  return data.tag_name;
+}
+
+
 export default function RootLayout({
   children,
 }: {
@@ -54,13 +65,17 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "m-10 bg-[--light-bg] dark:bg-[--dark-bg] min-h-screen space-y-auto md:mx-10"
+          "m-10 bg-[--light-bg] dark:bg-[--dark-bg] min-h-screen space-y-auto"
         }
       >
         <ThemeContextProvider>
-          <Navbar />
-          <NavigationLinks />
-          {children}
+          <div className="bg-[--primary-color] px-4 py-2 text-center text-sm text-white undefined"> Check what has changed in the <strong className="underline underline-offset-1"><a href="https://github.com/PriyansuMaurya/AI-Fusion/releases/latest" rel="external noopener noreferrer" target="_blank">{getCurrentVersion()}</a></strong>.</div>
+          <div className=" md:mx-10">
+            <Navbar />
+            <NavigationLinks />
+            {children}
+          </div>
+
         </ThemeContextProvider>
         <Footer />
       </body>
