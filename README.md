@@ -57,12 +57,12 @@ If you want to contribute to this project, you can use **Gitpod** or **Codespace
 <table>
   <tr>
     <td align="center" valign="middle">
-      <a href="https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git">
+      <a href="https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git" target="_blank">
         <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Gitpod Ready-to-Code">
       </a>
     </td>
     <td align="center" valign="middle">
-      <a href="https://codespaces.new/PriyansuMaurya/AI-Fusion">
+      <a href="https://codespaces.new/PriyansuMaurya/AI-Fusion" target="_blank">
         <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces" style="max-width: 100%;">
       </a>
     </td>
