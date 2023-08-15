@@ -1,12 +1,7 @@
-<div id="top">
-
-# AI Fusion - Your One-Stop Destination for Inclusive AI Resources!
-
-</div>
-
-![banner](./github-assets/banner.jpeg)
-
 # Welcome👋
+
+![ai_fusion_banner](https://github.com/PriyansuMaurya/AI-Fusion/assets/101447544/0190bf8a-6622-4e0c-af09-1ee867dd696f)
+
 
 > Here is the preview of the website https://aifusion.vercel.app
 
@@ -21,7 +16,7 @@
 ## How To SetUp
 - Fork The Repo
 ```
-just click on the green fork button on the top
+First click on the green fork button on the top
 ```
 - Clone your forked repo
 ```
@@ -55,13 +50,27 @@ When you are ready to start work on an issue:
 
 > **Warning**: Please do not spam the repository with unnecessary PRs. Make sure to follow the project's [code of conduct](/CODE_OF_CONDUCT.md).
 
-## Contribute Easily with Gitpod 🚀
+## Contribute Easily with Gitpod | Codespace 🚀
 
-Simply click the button below, and Gitpod will take care of everything, ensuring that all the necessary dependencies are installed, the project is running, and you are ready to contribute.
+If you want to contribute to this project, you can use **Gitpod** or **Codespace** to create an online development environment in seconds. No need to install anything on your local machine. Just click the button below, and you will have everything you need to start coding.
 
-[![Gitpod Ready-to-Code](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git)
+<table>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git">
+        <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Gitpod Ready-to-Code">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="https://codespaces.new/PriyansuMaurya/AI-Fusion">
+        <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces" style="max-width: 100%;">
+      </a>
+    </td>
+  </tr>
+</table>
 
-Enjoy the simplicity and ease of contributing with Gitpod!
+
+Enjoy the simplicity and ease of contributing with cloud-based code editors! Learn more about them [here](https://www.freecodecamp.org/news/github-codespaces-vs-gitpod-cloud-based-dev-environments/).
 
 ## 🫂 Contributors
 
@@ -79,7 +88,12 @@ Thank you for your interest in contributing to our project! We appreciate any co
 
 </details>
 
+## 🙋‍♂️ Support
+
+💙 If you like this project, give it a ⭐ and share it with friends!
+
 ## ©️ License
+
 
 Our project is licensed under the [MIT license](./LICENSE). By contributing, you agree that your contributions will be licensed under its MIT license.
 
