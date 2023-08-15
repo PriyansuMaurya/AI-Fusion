@@ -1,4 +1,4 @@
-name: 'Lock new issues'
+name: 'Issue Lockdown'
 
 on:
   issues:
@@ -11,11 +11,12 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
-      - uses: dessant/repo-lockdown@v3
+      - uses: dessant/repo-lockdown@v3 # Reference: https://github.com/dessant/repo-lockdown
         with:
           close-issue: false
-          exclude-issue-labels: '🏁 status: ready for dev'
           process-only: 'issues'
+          issue-labels: '🔒 locked'
+          exclude-issue-labels: '🚀 ready'
           skip-closed-issue-comment: true
           issue-comment: >
-            To reduce notifications, issues are locked. Your issue will be unlock when we will add label as `🏁 status: ready for dev`.  Check out the [contributing guide](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md) for more information.
+            To reduce notifications, issues are locked. Your issue will be unlocked when we will add label as `🏁 status: ready for dev`.  Check out the [contributing guide](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md) for more information.
