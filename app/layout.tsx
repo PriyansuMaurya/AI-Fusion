@@ -4,6 +4,9 @@ import Navbar from "@/components/Navbar";
 import { ThemeContextProvider } from "./context/store";
 import NavigationLinks from "@/components/NavigationLinks";
 import Footer from "@/components/Footer";
+import Announcement from "@/components/Announcement";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,11 +16,13 @@ export const metadata = {
     "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
 };
 
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       <head>
@@ -54,16 +59,21 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "m-10 bg-[--light-bg] dark:bg-[--dark-bg] min-h-screen space-y-auto md:mx-10"
+          "m-10 bg-[--light-bg] dark:bg-[--dark-bg] min-h-screen space-y-auto"
         }
       >
         <ThemeContextProvider>
-          <Navbar />
-          <NavigationLinks />
-          {children}
+          <Announcement />
+          <div className="md:mx-10">
+            <Navbar />
+            <NavigationLinks />
+            {children}
+          </div>
+
         </ThemeContextProvider>
         <Footer />
       </body>
     </html>
   );
 }
+
