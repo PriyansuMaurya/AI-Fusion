@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode, useEffect } from "react";
 import { AllPropsFromLayout, Theme, themeContext } from "@/types";
 
 const ThemeContext = createContext<themeContext>({
@@ -10,8 +10,19 @@ const ThemeContext = createContext<themeContext>({
 export const ThemeContextProvider = ({ children }: AllPropsFromLayout) => {
   const [theme, setTheme] = useState("dark");
 
+  useEffect(() => {
+    // get the theme from localStorage on initial render
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+  }, []);
+
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    // toggle the theme and store it in localStorage
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
 
   return (
