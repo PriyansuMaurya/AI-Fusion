@@ -8,7 +8,7 @@ export default function NavigationLinks() {
 
   const linkVariant = {
     hover: {
-      scale: 1.1,
+      scale: 1.09,
       transition: {
         duration: 0.3,
         yoyo: Infinity
