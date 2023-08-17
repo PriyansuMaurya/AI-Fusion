@@ -18,7 +18,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: 'Congratulations, @${{ github.actor }}! 🎉 Thank you for creating the issue. We appreciate your contribution and are excited to work with you to resolve it. Your initiative is commendable, and we value your efforts to improve our project. Keep up the great work!'
-          pr-message: 'Great job, @${{ github.actor }}! 🎉 Thank you for submitting your first pull request. Your contribution is extremely valuable, and we are grateful for your dedication to improving our project. We recognize your hard work and commitment. Keep up the excellent job!'
+          pr-message: 'Great job, @${{ github.actor }}! 🎉 Thank you for submitting your pull request. Your contribution is extremely valuable, and we are grateful for your dedication to improving our project. We recognize your hard work and commitment. Keep up the excellent job!'
           footer: 'We will promptly review your changes and provide helpful feedback. Please remember to review our [contributing guidelines](https://github.com/PriyansuMaurya/AI-Fusion/blob/main/CONTRIBUTING.md). Thank you again for your contributions!'
 
 

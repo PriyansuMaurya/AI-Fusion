@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useThemeContext } from "./context/store";
 import Image from "next/image";
 import PoweredByVercel from "../public/powered-by-vercel.svg";
+import Undraw from "../public/undraw.svg";
 
 export default function Home() {
   const { theme } = useThemeContext();
@@ -29,7 +30,7 @@ export default function Home() {
           </p>
         </div>
         <div className="h-72 w-72 md:h-96 md:w-auto lg:max-w-full">
-          <Image src={"/undraw.png"} width={500} height={500} alt={""} />
+          <Image src={Undraw} width={500} height={500} alt={""} />
         </div>
       </div>
       <div className="mt-3 md:mt-8  flex flex-col items-center space-y-10 lg:space-y-12">
