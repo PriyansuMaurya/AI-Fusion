@@ -1,14 +1,18 @@
 'use client'
 import Link from "next/link";
 import { motion } from "framer-motion";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
 
 
 
 export default function NavigationLinks() {
 
+  const isMobile = useMediaQuery("(max-width: 600px)");
+
   const linkVariant = {
     hover: {
-      scale: 1.09,
+      scale: isMobile ? 1.1 : 1.02,
       transition: {
         duration: 0.3,
         yoyo: Infinity
