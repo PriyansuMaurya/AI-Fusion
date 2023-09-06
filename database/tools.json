@@ -14,13 +14,25 @@
   },
   {
     "title": "Bard",
-    "description": "Google Bard is a large language model that can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.",
+    "description": "Google Bard is a large language model that can generate text, translate languages, write different kinds of creative content, answer your questions in an informative way, summarize text, work with images and code, and be personalized and collaborative. It can be used for a variety of purposes, such as understanding the main points of a text, getting a quick overview of a topic, generating ideas, brainstorming, answering questions, working with images and code.",
     "url": "https://bard.google.com/",
-    "tags": []
+    "tags": [
+      "large-language-model", 
+      "llm", 
+      "chatbot", 
+      "virtual-assistant", 
+      "natural-language-processing", 
+      "nlp",
+      "generative-text", 
+      "creative-writing", 
+      "question-answering", 
+      "summarization", 
+      "translation"
+    ]
   },
   {
     "title": "Bing Chat",
-    "description": "Bing Chat excels at assisting users with queries, providing relevant information, understanding and communicating fluently in multiple languages, generating diverse content, including code, and improving user-generated content, all while leveraging its real-time web extraction capability to ensure up-to-date answers directly from the web.",
+    "description": "Bing Chat is a powerful AI-powered chatbot that can help you with a variety of tasks. It can answer your questions, translate languages, write different kinds of creative content, and complete tasks. It is also able to understand and communicate fluently in multiple languages. Recently, Bing Chat has added new features such as multimodal visual search, persistent chat.",
     "url": "https://www.bing.com/new",
     "tags": [
       "artificial",
@@ -136,5 +148,77 @@
       "google-alternative",
       "time-saving-tool"
     ]
+  },
+  {
+    "title": "Moises App",
+    "description": "Moises.ai is an AI-powered music production app that helps musicians practice, create, and remix their favorite songs. It can separate vocals and instruments from any song, create backing tracks, and slow down or speed up songs without changing the pitch.",
+    "url": "https://moises.ai/",
+    "tags": [
+      "ai-powered-music-production",
+      "vocal-removal",
+      "instrument-separation",
+      "backing-tracks",
+      "metronome",
+      "audio-speed-changer",
+      "chord-detection",
+      "music-practice",
+      "music-creation",
+      "music-remixing"
+  ]
+  },
+  {
+    "title": "Lensa",
+    "description": "Lensa is an AI-powered photo editor that can be used to enhance your photos in a variety of ways. It offers features such as skin smoothing, background blur, artistic filters, and Magic Avatar, which turns your selfies into realistic artwork in different styles.",
+    "url": "https://prisma-ai.com/lensa",
+    "tags": [
+      "photo-editor",
+      "skin-smoothing",
+      "background-blur",
+      "artistic-filters",
+      "magic-avatar",
+      "background-removal",
+      "retouching",
+      "stickers",
+      "text",
+      "photo-enhancement"
+  ]
+  },
+  {
+    "title": "Otter.ai",
+    "description": "Otter.ai is an AI-powered meeting transcription app that can help you capture and share meeting notes, conversations, and ideas. It offers real-time transcription, searchable transcripts, and collaborative editing.",
+    "url": "https://otter.ai/",
+    "tags": [
+      "meeting-transcription",
+      "lecture-transcription",
+      "interview-transcription",
+      "podcast-transcription",
+      "speech-to-text"
+  ]
+  },
+  {
+    "title": "Framer AI",
+    "description": "Framer AI is a tool that uses artificial intelligence to help you create websites without any coding knowledge. You can start with a simple prompt and the AI will generate a beautiful, responsive website for you. You can then customize the website to your liking.",
+    "url": "https://www.framer.com/ai",
+    "tags": [
+      "ai-website-builder",
+      "no-code-website-builder",
+      "responsive-websites",
+      "customizable-websites",
+      "collaborative-websites"
+  ]
+  },
+  {
+    "title": "Luma AI",
+    "description": "Luma AI is best known for its ability to create photorealistic 3D models from smartphone captures. It uses artificial intelligence to capture the intricate details of real-world objects, such as their shape, texture, and lighting, and then recreate them in 3D.",
+    "url": "https://www.framer.com/ai",
+    "tags": [
+      "ai-website-builder",
+      "no-code-website-builder",
+      "responsive-websites",
+      "customizable-websites",
+      "collaborative-websites"
+  ]
   }
+
 ]
+
