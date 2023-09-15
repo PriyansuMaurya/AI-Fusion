@@ -218,6 +218,17 @@
       "customizable-websites",
       "collaborative-websites"
   ]
+  },
+  {
+    "title": "Rix",
+    "description": "Rix is an AI chatbot developed by Hashnode that aims to help developers find accurate and up-to-date information .",
+    "url": "https://hashnode.com/rix",
+    "tags": [
+      "ai-chatbot",
+      "Large-Language Model",
+      "Search-Companion",
+      "easy-web-search"
+  ]
   }
 
 ]
