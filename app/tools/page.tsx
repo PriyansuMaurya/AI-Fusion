@@ -28,14 +28,28 @@ export default function Tools() {
     }
   }, [theme]);
 
+  // Sort tools by title in alphabetical order
+  const sortedTools = [...tools].sort((a: Data, b: Data) =>
+    a.title.localeCompare(b.title)
+  );
+
   return (
     <div className="flex">
       <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
-        {tools.map((tool: Data, index: number) => (
-          <Card id={index} tools={true} data={tool} setModalActive={setModalActive} setModalData={setModalData} />
+        {sortedTools.map((tool: Data, index: number) => (
+          <Card
+            key={index}
+            id={index}
+            tools={true}
+            data={tool}
+            setModalActive={setModalActive}
+            setModalData={setModalData}
+          />
         ))}
       </main>
-      {modalActive && <Modal data={modalData} tools={true} setModalActive={setModalActive} />}
+      {modalActive && (
+        <Modal data={modalData} tools={true} setModalActive={setModalActive} />
+      )}
     </div>
   );
 }

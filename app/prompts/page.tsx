@@ -22,11 +22,17 @@ export default function Prompts() {
     }
   }, [theme]);
 
+  // Sort prompts by title in alphabetical order
+  const sortedPrompts = [...prompts].sort((a: Data, b: Data) =>
+    a.title.localeCompare(b.title)
+  );
+
   return (
     <div className="flex">
       <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
-        {prompts.map((prompt: Data, index: number) => (
+        {sortedPrompts.map((prompt: Data, index: number) => (
           <Card
+            key={index}
             id={index}
             prompts={true}
             data={prompt}
@@ -35,7 +41,13 @@ export default function Prompts() {
           />
         ))}
       </main>
-      {modalActive && <Modal data={modalData} prompts={true} setModalActive={setModalActive} />}
+      {modalActive && (
+        <Modal
+          data={modalData}
+          prompts={true}
+          setModalActive={setModalActive}
+        />
+      )}
     </div>
   );
 }
