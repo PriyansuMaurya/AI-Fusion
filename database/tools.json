@@ -229,6 +229,20 @@
       "Search-Companion",
       "easy-web-search"
   ]
+  },
+  {
+    "title": "SlidesAI",
+    "description": "SlidesAI is an AI-powered presentation tool that can create presentations from text, topic, or even images. It also has features like text summarization, image search, and citation search. SlidesAI is available as a Google Slides extension.",
+    "url": "https://www.slidesai.io/",
+    "tags": [
+      "presentation",
+      "Presentation-assistant",
+      "Presentation-templates",
+      "Presentation-design",
+      "Computer-vision",
+      "Presentation-automation",
+      "google-slides-add-on"
+    ]
   }
 
 ]
