@@ -232,7 +232,7 @@
   },
   {
     "title": "SlidesAI",
-    "description": "SlidesAI.com is an AI-powered online platform that simplifies and enhances presentation creation by automating design elements and content suggestions.",
+    "description": "SlidesAI is an AI-powered presentation tool that can create presentations from text, topic, or even images. It also has features like text summarization, image search, and citation search. SlidesAI is available as a Google Slides extension.",
     "url": "https://www.slidesai.io/",
     "tags": [
       "presentation",
