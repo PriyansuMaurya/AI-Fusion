@@ -7,7 +7,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 export default function NavigationLinks() {
   const [activeSection, setActiveSection] = useState("");
 
-  const handleSectionClick = (section) => {
+  const handleSectionClick = (section: string) => {
     setActiveSection(section);
   };
 
@@ -23,16 +23,11 @@ export default function NavigationLinks() {
     },
   };
 
-  const handleToolsClick = () => {
-    document.title = "AI Fusion - Tools";
-  };
 
-  const handlePromptsClick = () => {
-    document.title = "AI Fusion - Prompts";
-  };
+  const handleClick = (event: React.MouseEvent<HTMLAnchorElement>, title: string) => {
+    event.preventDefault();
 
-  const handleDatasetsClick = () => {
-    document.title = "AI Fusion - Datasets";
+    document.title = `AI Fusion | ${title}`;
   };
 
   return (
@@ -43,43 +38,40 @@ export default function NavigationLinks() {
     >
       <div className="w-50 border border-[--dark-bg] dark:border-[--light-bg] rounded-3xl flex flex-row justify-evenly items-center">
         <Link
-          className={`w-24 text-center font-semibold ${
-            activeSection === "tools"
-              ? "bg-green-500 text-white"
-              : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
-          } rounded-l-3xl transition px-4 py-2`}
+          className={`w-24 text-center font-semibold ${activeSection === "tools"
+            ? "bg-green-500 text-white"
+            : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
+            } rounded-l-3xl transition px-4 py-2`}
           href="/tools"
-          onClick={() => {
+          onClick={(event) => {
             handleSectionClick("tools");
-            handleToolsClick();
+            handleClick(event, "Tools");
           }}
         >
           Tools
         </Link>
         <Link
-          className={`w-24 text-center font-semibold ${
-            activeSection === "prompts"
-              ? "bg-green-500 text-white"
-              : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
-          } transition px-4 py-2`}
+          className={`w-24 text-center font-semibold ${activeSection === "prompts"
+            ? "bg-green-500 text-white"
+            : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
+            } transition px-4 py-2`}
           href="/prompts"
-          onClick={() => {
+          onClick={(event) => {
             handleSectionClick("prompts");
-            handlePromptsClick();
+            handleClick(event, "Prompts");
           }}
         >
           Prompts
         </Link>
         <Link
-          className={`w-24 text-center font-semibold ${
-            activeSection === "datasets"
-              ? "bg-green-500 text-white"
-              : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
-          } rounded-r-3xl transition px-4 py-2`}
+          className={`w-24 text-center font-semibold ${activeSection === "datasets"
+            ? "bg-green-500 text-white"
+            : "hover:bg-[color:var(--primary-color)] hover:text-white focus:bg-[--primary-color]"
+            } rounded-r-3xl transition px-4 py-2`}
           href="/datasets"
-          onClick={() => {
+          onClick={(event) => {
             handleSectionClick("datasets");
-            handleDatasetsClick();
+            handleClick(event, "Datasets");
           }}
         >
           Datasets
