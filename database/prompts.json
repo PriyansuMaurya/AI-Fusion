@@ -116,5 +116,18 @@
       "create-prompt",
       "gpt4"
     ]
+  },
+  {
+    "title": "Create a Mind Map with Markmap.js",
+    "description": "Create a mind map that visually organizes the key points from this book. The mind map should cover the major themes and concepts discussed in the book. Break each of these broad themes into subtopics. Provide a clear structure with hierarchical nodes for each main topic and its subpoints.\n\nUse Markmap.js code (example below) in a code block to represent the mind map, with branches for each of the main topics and subtopics, without mentioning the cites. The mind map should be easy to navigate and visually clear, allowing the reader to understand the interconnectedness of the key ideas.\n\n<MarkmapExample>\n\n---\ntitle: markmap\n\nmarkmap:\n  colorFreezeLevel: 2\n\n---\n\n\n## Links\n\n- [Website](https://markmap.js.org/)\n\n- [GitHub](https://github.com/gera2ld/markmap)\n\n## Related Projects\n\n- [coc-markmap](https://github.com/gera2ld/coc-markmap) for Neovim\n\n- [markmap-vscode](https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode) for VSCode\n\n- [eaf-markmap](https://github.com/emacs-eaf/eaf-markmap) for Emacs\n\n## Features\n\nNote that if blocks and lists appear at the same level, the lists will be ignored.\n\n### Lists\n\n- **strong** ~~del~~ *italic* ==highlight==\n- inline code\n- [x] checkbox\n- Katex: $x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}$ <!-- markmap: fold -->\n- [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)\n- Now we can wrap very very very very long text based on maxWidth option\n- Ordered list\n\n1. item 1\n2. item 2\n\n### Blocks\n\njs\nconsole.log('hello, JavaScript')\n\n\n| Products | Price |\n|-|-|\n| Apple | 4 |\n| Banana | 2 |\n\n![](https://markmap.js.org/favicon.png)\n</MarkmapExample>",
+    "url": "https://markmap.js.org/repl",
+    "tags": [
+      "markmap-js",
+      "mind-map",
+      "visual-organization",
+      "book-analysis",
+      "concept-mapping"
+    ]
   }
+  
 ]

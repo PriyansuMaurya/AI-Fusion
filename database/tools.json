@@ -14,8 +14,8 @@
   },
   {
     "title": "Bard",
-    "description": "Google Bard is a large language model that can generate text, translate languages, write different kinds of creative content, answer your questions in an informative way, summarize text, work with images and code, and be personalized and collaborative. It can be used for a variety of purposes, such as understanding the main points of a text, getting a quick overview of a topic, generating ideas, brainstorming, answering questions, working with images and code.",
-    "url": "https://bard.google.com/",
+    "description": "Gemini is a large language model that can generate text, translate languages, write different kinds of creative content, answer your questions in an informative way, summarize text, work with images and code, and be personalized and collaborative. It can be used for a variety of purposes, such as understanding the main points of a text, getting a quick overview of a topic, generating ideas, brainstorming, answering questions, working with images and code.",
+    "url": "https://gemini.google.com/",
     "tags": [
       "large-language-model", 
       "llm", 
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "title": "Bing Chat",
+    "title": "Microsoft Copilot",
     "description": "Bing Chat is a powerful AI-powered chatbot that can help you with a variety of tasks. It can answer your questions, translate languages, write different kinds of creative content, and complete tasks. It is also able to understand and communicate fluently in multiple languages. Recently, Bing Chat has added new features such as multimodal visual search, persistent chat.",
     "url": "https://www.bing.com/new",
     "tags": [
@@ -135,7 +135,7 @@
     ]
   },
   {
-    "title": "Perplexity Search Engine and Chatbot",
+    "title": "Perplexity",
     "description": "Perplexity AI is a search engine that uses AI to retrieve information and fill in gaps in knowledge. It is a tool that can be used to enhance research projects and offers snippets, functions, variable names, or even entire code lines, saving valuable time.",
     "url": "https://www.perplexity.ai/",
     "tags": [
@@ -243,7 +243,53 @@
       "Presentation-automation",
       "google-slides-add-on"
     ]
+  },
+  {
+      "title": "Google AI Studio",
+      "description": "Google AI Studio is a platform designed to help users create and manage AI models and applications. It offers a variety of tools and features, including API keys, real-time streaming, starter apps, model tuning, and a prompt gallery. Users can also access API documentation, a developer forum, and a changelog to stay updated with the latest developments.",
+      "url": "https://aistudio.google.com/prompts/new_chat",
+      "tags": [
+        "AI",
+        "AI-models",
+        "AI-applications",
+        "API-keys",
+        "Real-time-streaming",
+        "Model-tuning",
+        "Prompt-gallery",
+        "Google"
+      ]
+  },
+  {
+      "title": "Claude",
+      "description": "Claude is a next-generation AI assistant built by Anthropic. It is designed to be safe, accurate, and secure, helping users create and manage various tasks such as drafting and iterating on websites, graphics, documents, and code. Claude is available on the web, iOS, and Android platforms.",
+      "url": "https://claude.ai/",
+      "tags": [
+        "AI",
+        "AI-assistant",
+        "AI-chatbot",
+        "Anthropic",
+        "Web",
+        "iOS",
+        "Android"
+      ]
+  },
+  {
+    "title": "NotebookLM",
+    "description": "NotebookLM is an AI-powered research assistant and note-taking tool developed by Google. It leverages the advanced Gemini 1.5 Pro model to summarize information and generate insights from uploaded documents. Users can upload various sources, such as PDFs, Google Docs, and YouTube videos, to create a centralized notebook. NotebookLM provides accurate responses with in-line citations and sources, ensuring accuracy and traceability. It also offers features like audio podcast generation, interactive engagement with conversational AI, and multimedia integration.",
+    "url": "https://notebooklm.google.com/",
+    "tags": [
+      "AI",
+      "AI-research",
+      "Note-taking",
+      "Google",
+      "Gemini-1.5-Pro",
+      "Summarization",
+      "Audio-podcast",
+      "Conversational-AI",
+      "Multimedia-integration"
+    ]
   }
+
 
 ]
 
