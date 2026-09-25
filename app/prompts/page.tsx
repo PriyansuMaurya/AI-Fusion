@@ -17,22 +17,26 @@ export default function Prompts() {
 
   return (
     <div className="flex">
-      <main className="mx-auto mt-8 flex w-full max-w-7xl flex-row flex-wrap justify-center bg-[--light-bg] px-2 pb-12 dark:bg-[--dark-bg] dark:text-[--light-bg] md:mt-12 md:px-8">
-        <div className="mb-5 w-full px-3">
+      <main className="mx-auto flex w-full max-w-7xl flex-col px-5 pb-20 pt-10 text-[--ink] sm:px-8 lg:px-12">
+        <div className="border-b border-[--line] pb-8">
           <p className="eyebrow">Resource library</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-[-.04em]">Prompts</h1>
-          <p className="mt-2 text-sm text-[--muted]">{sortedPrompts.length} reusable starting points for better conversations.</p>
+          <div className="mt-3 flex flex-wrap items-end justify-between gap-5">
+            <h1 className="text-5xl font-semibold tracking-[-.07em] sm:text-6xl">Prompts</h1>
+            <p className="max-w-sm text-sm leading-relaxed text-[--muted]">{sortedPrompts.length} reusable starting points for clearer conversations.</p>
+          </div>
         </div>
-        {sortedPrompts.map((prompt: Data) => (
-          <Card
-            key={prompt.title}
-            id={prompt.title.length}
-            prompts={true}
-            data={prompt}
-            setModalData={setModalData}
-            setModalActive={setModalActive}
-          />
-        ))}
+        <div className="mt-10 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {sortedPrompts.map((prompt: Data) => (
+            <Card
+              key={prompt.title}
+              id={prompt.title.length}
+              prompts={true}
+              data={prompt}
+              setModalData={setModalData}
+              setModalActive={setModalActive}
+            />
+          ))}
+        </div>
       </main>
       {modalActive && modalData && (
         <Modal
