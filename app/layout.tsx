@@ -1,10 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import { ThemeContextProvider } from "./context/store";
-import NavigationLinks from "@/components/NavigationLinks";
 import Footer from "@/components/Footer";
-import Announcement from "@/components/Announcement";
 
 
 
@@ -59,18 +56,13 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "min-h-screen bg-[--light-bg] text-[--ink] dark:bg-[--dark-bg]"
+          "flex min-h-screen flex-col bg-[--light-bg] text-[--ink] dark:bg-[--dark-bg]"
         }
       >
-        <ThemeContextProvider>
-          <Announcement />
-          <div className="md:mx-10">
-            <Navbar />
-            <NavigationLinks />
-            {children}
-          </div>
-
-        </ThemeContextProvider>
+        <div className="md:mx-10">
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

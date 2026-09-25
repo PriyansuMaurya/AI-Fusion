@@ -1,8 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useThemeContext } from "../context/store";
+import { useState } from "react";
 import Card from "@/components/Card";
-import { theme, Data } from "@/types";
+import { Data } from "@/types";
 import tools from "../../database/tools.json";
 import Modal from "@/components/Modal";
 
@@ -16,17 +15,6 @@ interface Tool {
 export default function Tools() {
   const [modalActive, setModalActive] = useState(false);
   const [modalData, setModalData] = useState<Data>({});
-
-  // Dark mode
-  const { theme }: theme = useThemeContext();
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
 
   // Sort tools by title in alphabetical order
   const sortedTools = [...tools].sort((a: Data, b: Data) =>

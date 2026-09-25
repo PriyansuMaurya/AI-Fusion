@@ -1,21 +1,8 @@
 "use client";
-import { theme } from "@/types";
-import { useThemeContext } from "./context/store";
-import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pageNotFound from "../public/page404.svg";
 export default function NotFound() {
-  // Dark Mode
-  const { theme }: theme = useThemeContext();
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
   return (
     <div className="flex flex-col items-center xl:flex-row xl:items-start  justify-around bg-[--light-bg] dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg] md:ms-16 md:my-16 mt-10 m-5">
       <div>

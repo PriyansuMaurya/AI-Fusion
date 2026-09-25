@@ -35,6 +35,7 @@ body { margin: 0; background: var(--light-bg); color: var(--ink); }
 
 @layer components {
   .eyebrow { @apply text-[10px] font-bold uppercase tracking-[0.22em]; color: var(--muted); }
+
   .rule { border-color: var(--line); }
   .button-arrow { @apply inline-flex items-center gap-3 border px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] transition-all duration-300; border-color: var(--ink); }
   .button-arrow:hover { background: var(--primary-color); transform: translateY(-2px); }
@@ -43,9 +44,6 @@ body { margin: 0; background: var(--light-bg); color: var(--ink); }
 }
 .dark body { background: var(--dark-bg); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
-
-@tailwind components;
-@tailwind utilities;
 
 @layer base { body { @apply antialiased; } }
 @layer utilities { .text-balance { text-wrap: balance; } }

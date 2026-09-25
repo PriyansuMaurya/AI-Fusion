@@ -1,8 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useThemeContext } from "../context/store";
+import { useState } from "react";
 import Card from "@/components/Card";
-import { theme, Data } from "@/types";
+import { Data } from "@/types";
 import prompts from "../../database/prompts.json";
 import Modal from "@/components/Modal";
 
@@ -10,17 +9,6 @@ export default function Prompts() {
   // Modal State Data
   const [modalActive, setModalActive] = useState(false);
   const [modalData, setModalData] = useState<Data>({});
-
-  // Dark Mode
-  const { theme }: theme = useThemeContext();
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
 
   // Sort prompts by title in alphabetical order
   const sortedPrompts = [...prompts].sort((a: Data, b: Data) =>

@@ -1,46 +1,66 @@
 "use client";
-import React from "react";
-import { BsGithub, BsToggleOn } from "react-icons/bs";
-import { useThemeContext } from "@/app/context/store";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import { NavbarContext } from "@/types";
-import logo from "../public/logo.png";
+import logo from "../public/logo.webp";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+const navSections = [
+  { id: "tools", label: "Tools", href: "/tools", title: "AI Fusion - Tools" },
+  { id: "prompts", label: "Prompts", href: "/prompts", title: "AI Fusion - Prompts" },
+  { id: "datasets", label: "Datasets", href: "/datasets", title: "AI Fusion - Datasets" },
+] as const;
 
 export default function Navbar() {
-  const { theme, handleThemeSwitch }: NavbarContext = useThemeContext();
+  const pathname = usePathname();
+  const activeMatch = navSections.find(
+    (section) => pathname === section.href || pathname === section.href + "/"
+  );
+
+  // Keep the page title in sync with the route (direct visits, reloads, back/forward).
+  useEffect(() => {
+    document.title = activeMatch ? activeMatch.title : "AI-Fusion";
+  }, [activeMatch]);
 
   return (
-    <header className="flex min-w-full items-center justify-between border-b border-[--line] py-5 text-[--ink] dark:bg-[--dark-bg]">
-      <Link
-        className="max-w-[12rem] transition-opacity duration-300 hover:opacity-70 md:max-w-[15rem]"
-        href={"/"}
-      >
-        <Image src={logo} alt={"AI Fusion"} width={180} height={280} />
-      </Link>
-      <div className="flex items-center gap-5">
-        <div>
-          <button aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} className="transition-transform duration-300 hover:rotate-12" onClick={() => handleThemeSwitch()}>
-            {theme === "dark" ? (
-              <BsToggleOn title="Light mode" size={30} />
-            ) : (
-              <BsToggleOn
-                title="Dark mode"
-                size={30}
-                className="text-[color:var(--primary-color)] rotate-180"
-              />
-            )}
-          </button>
-        </div>
-        <div
-          title="Go to Github"
-          className="relative hidden bottom-1  text-[--dark-bg] dark:text-[--light-bg]  hover:text-[color:var(--primary-color)] dark:hover:text-[color:var(--primary-color)]   transition md:block "
+    <header className="flex min-w-full flex-wrap items-center gap-y-3 border-b border-[--line] py-5 text-[--ink] dark:bg-[--dark-bg]">
+      <div className="flex flex-1 justify-start">
+        <Link
+          className="max-w-[14rem] transition-opacity duration-300 hover:opacity-70 md:max-w-[18rem]"
+          href={"/"}
         >
-          <a href="https://github.com/PriyansuMaurya/AI-Fusion" target="_blank">
-            <BsGithub size={25} />
-          </a>
-        </div>
+          <Image
+            src={logo}
+            alt={"AI Fusion"}
+            width={406}
+            height={70}
+            priority
+            className="h-auto w-full"
+          />
+        </Link>
       </div>
+
+      <nav aria-label="Resources" className="order-3 flex w-full items-center justify-center gap-6 md:order-none md:w-auto">
+        {navSections.map((section) => {
+          const isActive = activeMatch?.id === section.id;
+          return (
+            <Link
+              key={section.id}
+              href={section.href}
+              aria-current={isActive ? "page" : undefined}
+              className={
+                isActive
+                  ? "relative text-sm font-medium text-[--ink] transition-colors after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:bg-[--line]"
+                  : "text-sm text-[--muted] transition-colors hover:text-[--ink]"
+              }
+            >
+              {section.label}
+            </Link>
+          );
+        })}
+      </nav>
+
+      <div className="flex-1" />
     </header>
   );
 }

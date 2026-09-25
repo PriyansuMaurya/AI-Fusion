@@ -1,8 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
-import { useThemeContext } from "../context/store";
+import { useState } from "react";
 import Card from "@/components/Card";
-import { theme, Data } from "@/types";
+import { Data } from "@/types";
 import datasets from "../../database/datasets.json";
 import Modal from "@/components/Modal";
 
@@ -10,17 +9,6 @@ export default function Datasets() {
   //Modal
   const [modalActive, setModalActive] = useState(false);
   const [modalData, setModalData] = useState<Data>({});
-
-  // Dark Mode
-  const { theme }: theme = useThemeContext();
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [theme]);
 
   // Sort datasets by title in alphabetical order
   const sortedDatasets = [...datasets].sort((a: Data, b: Data) =>
