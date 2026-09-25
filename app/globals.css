@@ -41,6 +41,45 @@ body { margin: 0; background: var(--light-bg); color: var(--ink); }
   .button-arrow:hover { background: var(--primary-color); transform: translateY(-2px); }
   .accent-mark { position: relative; display: inline-block; z-index: 0; }
   .accent-mark::after { content: ""; position: absolute; z-index: -1; left: -.04em; right: -.04em; bottom: .06em; height: .24em; background: var(--primary-color); transform: rotate(-1.5deg); }
+
+  .flip-text-box {
+    position: relative;
+    display: inline-block;
+    height: 2.4rem;
+    min-width: 7rem;
+    perspective: 1000px;
+    overflow: hidden;
+  }
+
+  .flip-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform 0.55s ease, opacity 0.35s ease;
+    transform-origin: center;
+  }
+
+  .flip-text-front {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+
+  .flip-text-back {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+
+  .group:hover .flip-text-front {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+
+  .group:hover .flip-text-back {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
 }
 .dark body { background: var(--dark-bg); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

@@ -39,21 +39,21 @@ export default function Navbar() {
             width={406}
             height={70}
             priority
-            className="hidden h-auto w-full sm:block"
+            className="hidden h-auto w-full 2xl:block"
           />
           <Image
             src={compactLogo}
             alt=""
-            width={48}
-            height={48}
+            width={96}
+            height={96}
             priority
             aria-hidden="true"
-            className="block h-11 w-11 object-contain sm:hidden"
+            className="block h-11 w-11 p-1 object-contain md:h-[88px] md:w-[88px] 2xl:hidden"
           />
         </Link>
       </div>
 
-      <nav aria-label="Resources" className="order-3 flex w-full items-center justify-center gap-5 border-t border-[--line] pt-4 sm:gap-7 md:order-none md:w-auto md:border-t-0 md:pt-0">
+      <nav aria-label="Resources" className="flex items-center justify-center gap-3 sm:gap-5 md:gap-7">
         {navSections.map((section) => {
           const isActive = activeMatch?.id === section.id;
           return (
@@ -63,8 +63,8 @@ export default function Navbar() {
               aria-current={isActive ? "page" : undefined}
               className={
                 isActive
-                  ? "relative text-sm font-medium text-[--ink] transition-colors after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-[--ink]"
-                  : "rounded-sm text-sm text-[--muted] transition-colors hover:text-[--ink] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[--primary-color]"
+                  ? "relative text-sm font-medium uppercase tracking-[0.14em] text-[--ink] transition-colors after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-[--ink]"
+                  : "rounded-sm text-sm uppercase tracking-[0.14em] text-[--muted] transition-colors hover:text-[--ink] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[--primary-color]"
               }
             >
               {section.label}

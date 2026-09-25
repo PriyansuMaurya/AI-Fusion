@@ -27,7 +27,7 @@ export default function Card({
 
   return (
     <div
-      className="group flex h-full min-h-64 flex-col border border-[--line] bg-[--light-bg] p-6 text-[--dark-bg] transition-colors hover:bg-[--surface] dark:bg-[--dark-bg] dark:text-[--light-bg]"
+      className="group flex h-full min-h-64 min-w-0 flex-col border border-[--line] bg-[--light-bg] p-6 text-[--dark-bg] transition-colors hover:bg-[--surface] dark:bg-[--dark-bg] dark:text-[--light-bg]"
     >
       <h2 className="line-clamp-2 text-2xl font-semibold tracking-[-.04em]">{title}</h2>
       <p className="mt-3 line-clamp-5 text-sm font-light">

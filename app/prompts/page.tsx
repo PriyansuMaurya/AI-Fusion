@@ -25,7 +25,7 @@ export default function Prompts() {
             <p className="max-w-sm text-sm leading-relaxed text-[--muted]">{sortedPrompts.length} reusable starting points for clearer conversations.</p>
           </div>
         </div>
-        <div className="mt-10 grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid w-full min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {sortedPrompts.map((prompt: Data) => (
             <Card
               key={prompt.title}

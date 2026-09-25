@@ -43,7 +43,6 @@ export default function Home() {
             <Link href="/tools" className="button-arrow">
               Explore the library <FiArrowUpRight aria-hidden="true" />
             </Link>
-            <span className="text-xs font-medium uppercase tracking-[.16em] text-[--muted]">Open source / 2024</span>
           </div>
         </div>
 
@@ -65,7 +64,10 @@ export default function Home() {
               className="group flex min-h-48 flex-col justify-between border-b border-[--line] p-5 transition-colors hover:bg-[--surface] md:border-b-0 md:p-7"
             >
               <div className="flex items-start justify-between gap-5">
-                <span className="text-2xl font-semibold tracking-[-.04em]">{resource.label}</span>
+                <div className="flip-text-box">
+                  <span className="flip-text flip-text-front text-2xl font-semibold uppercase tracking-[-.04em]">{resource.label}</span>
+                  <span className="flip-text flip-text-back text-2xl font-semibold uppercase tracking-[-.04em]">{resource.label}</span>
+                </div>
                 <FiArrowUpRight aria-hidden="true" className="text-xl text-[--muted] transition-transform duration-300 group-hover:translate-x-1" />
               </div>
               <div>
