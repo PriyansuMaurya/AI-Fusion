@@ -2,7 +2,7 @@
 
 AI-Fusion is a curated directory of AI tools, reusable prompts, and public datasets for curious builders.
 
-Visit the deployed site at [aifusion.vercel.app](https://aifusion.vercel.app).
+Visit the deployed site at [aifusion.maurya.ie](https://aifusion.maurya.ie).
 
 ## What is included
 

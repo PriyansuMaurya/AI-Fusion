@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   title: "AI-Fusion",
   description:
     "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
-  metadataBase: new URL("https://aifusion.vercel.app"),
+  metadataBase: new URL("https://aifusion.maurya.ie"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     siteName: "AI-Fusion - Resources For AI",
