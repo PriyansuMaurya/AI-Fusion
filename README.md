@@ -66,6 +66,9 @@ If you want to contribute to this project, you can use **Gitpod** or **Codespace
         <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces" style="max-width: 100%;">
       </a>
     </td>
+    <td>
+    <a href="https://app.codeanywhere.com/#https://github.com/PriyansuMaurya/AI-Fusion"><img src="https://codeanywhere.com/img/open-in-codeanywhere-btn.svg" alt="Open in Codeanywhere" width="200"></a>
+    </td>
   </tr>
 </table>
 
