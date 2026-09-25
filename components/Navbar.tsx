@@ -11,16 +11,16 @@ export default function Navbar() {
   const { theme, handleThemeSwitch }: NavbarContext = useThemeContext();
 
   return (
-    <div className="flex min-w-full h-20 items-center justify-between  dark:bg-[--dark-bg] text-[--dark-bg] dark:text-[--light-bg] ">
+    <header className="flex min-w-full items-center justify-between border-b border-[--line] py-5 text-[--ink] dark:bg-[--dark-bg]">
       <Link
-        className="mx-5 max-w-sm my-4 h-auto w-40 md:w-96 md:max-w-xl"
+        className="max-w-[12rem] transition-opacity duration-300 hover:opacity-70 md:max-w-[15rem]"
         href={"/"}
       >
         <Image src={logo} alt={"AI Fusion"} width={180} height={280} />
       </Link>
-      <div className="w-14 sm:w-20  flex flex-row justify-between items-center">
+      <div className="flex items-center gap-5">
         <div>
-          <button onClick={() => handleThemeSwitch()}>
+          <button aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"} className="transition-transform duration-300 hover:rotate-12" onClick={() => handleThemeSwitch()}>
             {theme === "dark" ? (
               <BsToggleOn title="Light mode" size={30} />
             ) : (
@@ -41,6 +41,6 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

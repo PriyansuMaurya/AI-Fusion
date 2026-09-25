@@ -59,7 +59,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          "m-10 bg-[--light-bg] dark:bg-[--dark-bg] min-h-screen space-y-auto"
+          "min-h-screen bg-[--light-bg] text-[--ink] dark:bg-[--dark-bg]"
         }
       >
         <ThemeContextProvider>
