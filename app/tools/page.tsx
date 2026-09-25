@@ -5,16 +5,9 @@ import { Data } from "@/types";
 import tools from "../../database/tools.json";
 import Modal from "@/components/Modal";
 
-interface Tool {
-  // Define the interface for your tool object
-  id: number;
-  // Add other properties based on your data structure
-  // For example: title, description, url, tags, etc.
-}
-
 export default function Tools() {
   const [modalActive, setModalActive] = useState(false);
-  const [modalData, setModalData] = useState<Data>({});
+  const [modalData, setModalData] = useState<Data | null>(null);
 
   // Sort tools by title in alphabetical order
   const sortedTools = [...tools].sort((a: Data, b: Data) =>
@@ -23,11 +16,16 @@ export default function Tools() {
 
   return (
     <div className="flex">
-      <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
-        {sortedTools.map((tool: Data, index: number) => (
+      <main className="mx-auto mt-8 flex w-full max-w-7xl flex-row flex-wrap justify-center bg-[--light-bg] px-2 pb-12 dark:bg-[--dark-bg] dark:text-[--light-bg] md:mt-12 md:px-8">
+        <div className="mb-5 w-full px-3">
+          <p className="eyebrow">Resource library</p>
+          <h1 className="mt-2 text-4xl font-semibold tracking-[-.04em]">AI tools</h1>
+          <p className="mt-2 text-sm text-[--muted]">{sortedTools.length} curated tools for making and shipping.</p>
+        </div>
+        {sortedTools.map((tool: Data) => (
           <Card
-            key={index}
-            id={index}
+            key={tool.title}
+            id={tool.title.length}
             tools={true}
             data={tool}
             setModalActive={setModalActive}
@@ -35,7 +33,7 @@ export default function Tools() {
           />
         ))}
       </main>
-      {modalActive && (
+      {modalActive && modalData && (
         <Modal data={modalData} tools={true} setModalActive={setModalActive} />
       )}
     </div>

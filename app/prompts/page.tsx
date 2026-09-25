@@ -8,7 +8,7 @@ import Modal from "@/components/Modal";
 export default function Prompts() {
   // Modal State Data
   const [modalActive, setModalActive] = useState(false);
-  const [modalData, setModalData] = useState<Data>({});
+  const [modalData, setModalData] = useState<Data | null>(null);
 
   // Sort prompts by title in alphabetical order
   const sortedPrompts = [...prompts].sort((a: Data, b: Data) =>
@@ -17,11 +17,16 @@ export default function Prompts() {
 
   return (
     <div className="flex">
-      <main className="mt-8 flex bg-[--light-bg] dark:bg-[--dark-bg] dark:text-[--light-bg] flex-row justify-center flex-wrap md:m-12">
-        {sortedPrompts.map((prompt: Data, index: number) => (
+      <main className="mx-auto mt-8 flex w-full max-w-7xl flex-row flex-wrap justify-center bg-[--light-bg] px-2 pb-12 dark:bg-[--dark-bg] dark:text-[--light-bg] md:mt-12 md:px-8">
+        <div className="mb-5 w-full px-3">
+          <p className="eyebrow">Resource library</p>
+          <h1 className="mt-2 text-4xl font-semibold tracking-[-.04em]">Prompts</h1>
+          <p className="mt-2 text-sm text-[--muted]">{sortedPrompts.length} reusable starting points for better conversations.</p>
+        </div>
+        {sortedPrompts.map((prompt: Data) => (
           <Card
-            key={index}
-            id={index}
+            key={prompt.title}
+            id={prompt.title.length}
             prompts={true}
             data={prompt}
             setModalData={setModalData}
@@ -29,7 +34,7 @@ export default function Prompts() {
           />
         ))}
       </main>
-      {modalActive && (
+      {modalActive && modalData && (
         <Modal
           data={modalData}
           prompts={true}
