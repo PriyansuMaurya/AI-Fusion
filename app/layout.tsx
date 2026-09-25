@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI-Fusion",
+  title: "AI FUSION",
   description:
     "A website where essential tools, prompts, and datasets are thoughtfully curated and combined in one place for your convenience.",
   metadataBase: new URL("https://aifusion.maurya.ie"),
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "AI-Fusion - Resources For AI",
-    title: "AI-Fusion",
+    siteName: "AI FUSION | Resources For AI",
+    title: "AI FUSION",
     description:
       "A curated collection of useful AI tools, prompts, and datasets for curious builders.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI-Fusion",
+    title: "AI FUSION",
     description:
       "A curated collection of useful AI tools, prompts, and datasets for curious builders.",
   },

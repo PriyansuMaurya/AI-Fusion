@@ -7,9 +7,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navSections = [
-  { id: "tools", label: "Tools", href: "/tools", title: "AI Fusion - Tools" },
-  { id: "prompts", label: "Prompts", href: "/prompts", title: "AI Fusion - Prompts" },
-  { id: "datasets", label: "Datasets", href: "/datasets", title: "AI Fusion - Datasets" },
+  { id: "tools", label: "Tools", href: "/tools", title: "AI FUSION | Tools" },
+  { id: "prompts", label: "Prompts", href: "/prompts", title: "AI FUSION | Prompts" },
+  { id: "datasets", label: "Datasets", href: "/datasets", title: "AI FUSION | Datasets" },
 ] as const;
 
 export default function Navbar() {
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   // Keep the page title in sync with the route (direct visits, reloads, back/forward).
   useEffect(() => {
-    document.title = activeMatch ? activeMatch.title : "AI-Fusion";
+    document.title = activeMatch ? activeMatch.title : "AI FUSION";
   }, [activeMatch]);
 
   return (
@@ -30,7 +30,7 @@ export default function Navbar() {
         <Link
           className="max-w-[12rem] rounded-sm transition-opacity duration-300 hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[--primary-color] sm:max-w-[14rem] md:max-w-[16rem]"
           href="/"
-          aria-label="AI-Fusion home"
+          aria-label="AI FUSION home"
           aria-current={isHome ? "page" : undefined}
         >
           <Image

@@ -28,7 +28,7 @@ const resourceGroups = [
 export default function Home() {
   return (
     <main className="mx-auto flex max-w-7xl flex-col px-5 pb-20 pt-6 text-[--ink] sm:px-8 sm:pt-8 lg:px-12 lg:pt-10">
-      <section className="grid items-start gap-14 pb-20 lg:grid-cols-[minmax(0,1.4fr)_minmax(18rem,.6fr)] lg:gap-16 lg:pb-24">
+      <section className="grid items-start gap-14 pb-20 lg:pb-24">
         <div className="animate-rise flex flex-col gap-8">
           <p className="eyebrow">A considered collection for curious builders</p>
           <h1 className="max-w-4xl text-5xl font-semibold leading-[.94] tracking-[-.07em] sm:text-7xl lg:text-[6.8rem]">
@@ -47,29 +47,14 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="border-t border-[--line] pt-5 lg:border-l lg:border-t-0 lg:pb-2 lg:pl-10 lg:pt-0" aria-label="Library overview">
-          <p className="eyebrow">The library at a glance</p>
-          <div className="mt-8 divide-y divide-[--line] border-y border-[--line]">
-            {resourceGroups.map((resource) => (
-              <div key={resource.label} className="flex items-baseline justify-between gap-5 py-4">
-                <span className="text-sm text-[--muted]">{resource.label}</span>
-                <span className="text-3xl font-semibold tracking-[-.05em]">{resource.count.toString().padStart(2, "0")}</span>
-              </div>
-            ))}
-          </div>
-          <p className="mt-5 max-w-xs text-sm leading-relaxed text-[--muted]">
-            Curated links, practical starting points, and useful places to look next.
-          </p>
-        </aside>
       </section>
 
       <section className="border-t border-[--line] pt-8" aria-labelledby="browse-heading">
-        <div className="flex flex-wrap items-end justify-between gap-5">
+        <div>
           <div>
             <p className="eyebrow">Start somewhere</p>
             <h2 id="browse-heading" className="mt-2 text-3xl font-semibold tracking-[-.05em] sm:text-4xl">Browse by need</h2>
           </div>
-          <p className="max-w-xs text-sm leading-relaxed text-[--muted]">Three focused shelves. One less tab to search for.</p>
         </div>
 
         <div className="mt-10 grid border-y border-[--line] md:grid-cols-3 md:divide-x md:divide-[--line]">

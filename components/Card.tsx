@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FiCheck, FiCopy, FiExternalLink } from "react-icons/fi";
+import { FiArrowUpRight, FiCheck, FiCopy } from "react-icons/fi";
 import { CardsProp } from "@/types";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -41,7 +41,7 @@ export default function Card({
             target="_blank"
             rel="noopener noreferrer"
           >
-            GO TO SITE <FiExternalLink aria-hidden="true" />
+            GO TO SITE <FiArrowUpRight aria-hidden="true" />
           </a>
         ) : (
           <CopyToClipboard text={description}>

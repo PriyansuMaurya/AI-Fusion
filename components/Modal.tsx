@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { FiCheck, FiCopy, FiExternalLink, FiX } from "react-icons/fi";
+import { FiArrowUpRight, FiCheck, FiCopy, FiX } from "react-icons/fi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ModalProps } from "@/types";
 
@@ -59,7 +59,7 @@ export default function Modal({ data, tools, datasets, setModalActive }: ModalPr
                   aria-label={`Open ${data.title} in a new tab`}
                   title="Open resource"
                 >
-                  <FiExternalLink aria-hidden="true" className="text-xl" />
+                  <FiArrowUpRight aria-hidden="true" className="text-xl" />
                 </a>
               ) : null
             ) : (
