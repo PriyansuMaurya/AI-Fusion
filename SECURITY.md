@@ -1,19 +1,23 @@
 
 # Security Policy
 
+AI-Fusion is an open-source project. Please report security issues privately so they can be investigated before details are made public.
+
 ## Supported Versions
 
 The table below displays the currently supported versions for the project:
 
-| Version       | Supported          |
-| ------------- | ------------------ |
-| v0.2.0-beta   | :white_check_mark: |
-| v0.0.1        | :x:                |
+| Version | Supported |
+| --- | --- |
+| `0.1.x` | Yes |
+| Older versions | No |
 
 ## Reporting a Vulnerability
 
-If you discover any bugs or vulnerabilities, please don't hesitate to contact any of the following individuals:
+If you discover a vulnerability, email [Priyanshu](mailto:priyanshu1999pm@gmail.com) with:
 
-- [Priyanshu](https://twitter.com/PrianshuMaurya)
-- [Raj Karan](https://twitter.com/rajkaran359)
-- [Ameya](https://twitter.com/Ameya023)
+- A description of the issue and its impact
+- Steps to reproduce or a proof of concept
+- Any suggested mitigation
+
+Please do not open a public issue for an undisclosed vulnerability. You should receive an acknowledgement as soon as practical, followed by updates while the report is investigated.

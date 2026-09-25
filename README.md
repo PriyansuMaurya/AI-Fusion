@@ -1,100 +1,84 @@
-# Welcome👋
+# AI-Fusion
 
-![ai_fusion_banner](https://github.com/PriyansuMaurya/AI-Fusion/assets/101447544/0190bf8a-6622-4e0c-af09-1ee867dd696f)
+AI-Fusion is a curated directory of AI tools, reusable prompts, and public datasets for curious builders.
 
+Visit the deployed site at [aifusion.vercel.app](https://aifusion.vercel.app).
 
-> Here is the preview of the website https://aifusion.vercel.app
+## What is included
 
-## 💻 Tech Stack
+- **Tools**: links to AI products and services.
+- **Prompts**: reusable prompts that can be copied with one click.
+- **Datasets**: public datasets and registries for research and development.
+- **Resource details**: descriptions, tags, external links, and accessible detail dialogs.
 
-- [Next Js](https://nextjs.org/) - Next.js is an open-source React front-end development web framework created by Vercel that enables functionality such as server-side rendering and generating static websites for React-based web applications.
-- [TypeScript](https://www.typescriptlang.org/) - TypeScript is an open-source language which builds on JavaScript, one of the world’s most used tools, by adding static type definitions.
-- [Tailwind CSS](https://tailwindcss.com) - Tailwind CSS is an open-source CSS framework.
+## Stack
 
+- [Next.js](https://nextjs.org/) 13 with the App Router
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-# 🚀 Getting Started!
-## How To SetUp
-- Fork The Repo
-```
-First click on the green fork button on the top
-```
-- Clone your forked repo
-```
-$ git clone
-```
-- Go to directory
-```
-$ cd AI-Fusion
-```
-- Install Dependencies
-```
-$ npm install
-```
-- Start LocalHost Server
-```
-$ npm run dev
+## Run locally
+
+### Requirements
+
+- Node.js 18 or newer
+- npm
+
+### Setup
+
+```bash
+git clone https://github.com/PriyansuMaurya/AI-Fusion.git
+cd AI-Fusion
+npm ci
 ```
 
-## 🤝 How To Contribute!
+Start the development server:
 
-Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please open an [issue](https://github.com/PriyansuMaurya/AI-Fusion/issues) or submit a pull request. We greatly appreciate any work contributed, no matter how big or small it is!. Make sure to follow the project's code of conduct.
+```bash
+npm run dev
+```
 
-### Issues & Pull Requests
-When you are ready to start work on an issue:
-- Let us know by leaving a comment on the issue (or you can also raise a new issue if you want to work on something completely new in the project)
-- Once you are assigned the issue (or once you have claimed the issue) only then proceed to make the Pull Request. This will help avoid multiple PRs pertaining to the same issue.
-- Go through the [CONTRIBUTING.md](/CONTRIBUTING.md) file, where all the guidelines have been mentioned that will guide you to make your contribution.
-- Do check out the [project issue tracker](https://github.com/PriyansuMaurya/AI-Fusion/issues) section.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-> **Note**: If you are new to open source contributions, you can refer to [this](https://opensource.guide/how-to-contribute/) guide by GitHub.
+## Commands
 
-> **Warning**: Please do not spam the repository with unnecessary PRs. Make sure to follow the project's [code of conduct](/CODE_OF_CONDUCT.md).
+```bash
+npm run dev      # Start the development server
+npm run lint     # Run ESLint
+npm run build    # Create a production build
+npm run start    # Serve the production build
+```
 
-## Contribute Easily with Gitpod | Codespace 🚀
+## Project structure
 
-If you want to contribute to this project, you can use **Gitpod** or **Codespace** to create an online development environment in seconds. No need to install anything on your local machine. Just click the button below, and you will have everything you need to start coding.
+```text
+app/              Next.js routes and global styles
+components/       Shared navigation, cards, dialogs, and footer
+database/         Curated JSON resource data
+types/             Shared TypeScript types
+public/            Runtime icons and branding assets
+```
 
-<table>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://gitpod.io/new/#https://github.com/PriyansuMaurya/AI-Fusion.git" target="_blank">
-        <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Gitpod Ready-to-Code">
-      </a>
-    </td>
-    <td align="center" valign="middle">
-      <a href="https://codespaces.new/PriyansuMaurya/AI-Fusion" target="_blank">
-        <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub Codespaces" style="max-width: 100%;">
-      </a>
-    </td>
-  </tr>
-</table>
+## Add a resource
 
+Add an entry to the matching file in `database/`:
 
-Enjoy the simplicity and ease of contributing with cloud-based code editors! Learn more about them [here](https://www.freecodecamp.org/news/github-codespaces-vs-gitpod-cloud-based-dev-environments/).
+```json
+{
+  "title": "Resource name",
+  "description": "A concise description of the resource.",
+  "url": "https://example.com",
+  "tags": ["tag-one", "tag-two"]
+}
+```
 
-## 🫂 Contributors
+Keep titles unique and run `npm run lint` and `npm run build` before opening a pull request.
 
-Thank you for your interest in contributing to our project! We appreciate any contributions, whether it's bug fixes, new features, or documentation improvements.
+## Contributing
 
-<details align=center>
-<summary>Contributors are here!!</summary>
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for the local workflow and contribution guidelines. Please also review the [Code of Conduct](CODE_OF_CONDUCT.md) and [Security Policy](SECURITY.md).
 
-<center>
-<a href="https://github.com/PriyansuMaurya/AI-Fusion/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=PriyansuMaurya/AI-Fusion" />
-</a>
+## License
 
-</center>
-
-</details>
-
-## 🙋‍♂️ Support
-
-💙 If you like this project, give it a ⭐ and share it with friends!
-
-## ©️ License
-
-
-Our project is licensed under the [MIT license](./LICENSE). By contributing, you agree that your contributions will be licensed under its MIT license.
-
-<p align="right">(<a href="#top">Back to top</a>)</p>
+AI-Fusion is released under the [MIT License](LICENSE).

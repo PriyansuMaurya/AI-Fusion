@@ -17,14 +17,12 @@ export const metadata: Metadata = {
     title: "AI-Fusion",
     description:
       "A curated collection of useful AI tools, prompts, and datasets for curious builders.",
-    images: [{ url: "/ai_fusion_preview.png", alt: "AI-Fusion" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI-Fusion",
     description:
       "A curated collection of useful AI tools, prompts, and datasets for curious builders.",
-    images: ["/ai_fusion_preview.png"],
   },
 };
 

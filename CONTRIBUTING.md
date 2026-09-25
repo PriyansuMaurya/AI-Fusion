@@ -1,75 +1,56 @@
-# Run & contribute to this project locally
+# Contributing to AI-Fusion
 
-> You can run & contribute to this project by following the steps below:
+Thank you for helping improve AI-Fusion. Small, focused pull requests are welcome.
 
-### 1. Fork this repository
-![fork](https://github.com/PriyansuMaurya/AI-Fusion/assets/88102392/a6097220-a2ef-4d41-9751-af02405fc64e)
+## Local setup
 
-### 2. Clone the forked repository to your local machine
+1. Fork the repository.
+2. Clone your fork:
 
-    git clone https://github.com/USERNAME/AI-Fusion
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/AI-Fusion.git
+   cd AI-Fusion
+   ```
 
-### 3. Navigate to the project directory
+3. Install dependencies:
 
-    cd AI-Fusion
+   ```bash
+   npm ci
+   ```
 
-### 4. Install dependencies
+4. Start the development server:
 
-    npm ci
+   ```bash
+   npm run dev
+   ```
 
-### 5. Run the project
+## Create a change
 
-    npm run dev
+Create a branch before editing:
 
-### 6. Create a new branch
+```bash
+git checkout -b describe-your-change
+```
 
-    git checkout -b <your_branch_name>
+For new resources, edit the appropriate JSON file in `database/`. Each entry should include `title`, `description`, `url`, and `tags`.
 
-### 7. Make changes in the source code
+Before opening a pull request, run:
 
-### 8. Stage your changes
+```bash
+npm run lint
+npm run build
+```
 
-    git add --all
+Use a clear commit message, push your branch, and open a pull request against `main`. Describe the user-facing change, the files affected, and the validation you ran.
 
-### 9. Commit your changes
+## Pull requests
 
-    git commit -m "<your_commit_message>"
+- Keep each pull request focused on one outcome.
+- Update documentation when behavior or setup changes.
+- Preserve accessible keyboard and focus behavior.
+- Do not add credentials, generated build output, or unnecessary media assets.
+- Link related issues with `Closes #NUMBER` when appropriate.
 
-> **Note**: Add a proper commit message that describes the changes you have made. Follow this [guide](https://www.conventionalcommits.org/en/v1.0.0/) to write good commit messages.
+## Code of Conduct
 
-### 10. Add upstream url
-
-    git remote add upstream https://github.com/PriyansuMaurya/AI-Fusion
-
-### 11. Push your changes
-
-    git push -u origin <your_branch_name>
-
-### 12. Create a pull request
-
-> **Note**: Add a proper title and description to your pull request that describes the changes you have made. Wait for the maintainer to review your pull request.
-
-### 13. Congratulations! 🎉 you've made your contribution to AI-Fusion project.
-
-# Add new data
-
-Follow above guide to fork, clone, run in local machine after that follow below steps to add new data.
-
-### 1. Add new data in `database` folder (database folder is in root directory)
-
-> there are three `json` file according to their category. Add new data in respective file.
-
-### 2. Follow the json code format to add new data
-
-    {
-    "title": "Name of the product",
-    "description": "Description of the product",
-    "url": "URL of the product",
-    "tags": [ "tag1", "tag2" ]
-    },
-
-### 3. Now stage, commit and push your changes
-
-### 4. Create a pull request
-
-### 5. Congratulations! 🎉 you've made your contribution to AI-Fusion project.
+Participation is subject to the [Code of Conduct](CODE_OF_CONDUCT.md).

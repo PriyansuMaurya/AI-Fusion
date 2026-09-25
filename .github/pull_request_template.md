@@ -15,10 +15,13 @@ Example: Closes #31
 List all the proposed changes in your PR.
 -->
 
-## Screenshots
+## Validation
 
 <!--
-Add all the screenshots which support your changes.
+List the checks you ran, for example:
+
+- `npm run lint`
+- `npm run build`
 -->
 
 ## Notes for Reviewers

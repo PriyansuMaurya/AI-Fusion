@@ -1,21 +1,23 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
   "hostRequirements": {
     "cpus": 4
   },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install",
-  "postCreateCommand": [
-    "npm install -D tailwindcss@latest postcss@latest autoprefixer@latest",
-    "npm install -D typescript @types/react @types/node",
-    "npm install next react react-dom"
-  ],
-  "postAttachCommand": {
+  "waitFor": "postCreateCommand",
+  "updateContentCommand": "npm ci",
+  "postCreateCommand": "npm run build",
+  "postStartCommand": {
     "server": "npm run dev"
   },
   "customizations": {
     "codespaces": {
-      "openFiles": ["src/App.tsx"]
+      "openFiles": ["README.md", "app/page.tsx"]
+    },
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
     }
   },
   "portsAttributes": {
@@ -24,10 +26,5 @@
       "onAutoForward": "openPreview"
     }
   },
-  "forwardPorts": [3000],
-  "extensions": [
-    "octref.vetur",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
-  ]
+  "forwardPorts": [3000]
 }

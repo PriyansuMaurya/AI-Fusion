@@ -1,4 +1,6 @@
-# Contributor Covenant Code of Conduct
+# AI-Fusion Code of Conduct
+
+AI-Fusion follows the Contributor Covenant to keep participation welcoming, respectful, and safe.
 
 ## Our Pledge
 
