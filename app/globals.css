@@ -3,33 +3,47 @@
 @tailwind utilities;
 
 :root {
-
-  --light-bg: #E2E8F0;
-  --dark-bg: #18181B;
-  --primary-color: #22C55E;
+  --light-bg: #f4f1ea;
+  --dark-bg: #171817;
+  --primary-color: #d9ff58;
+  --ink: #171817;
+  --muted: #76756d;
+  --line: rgba(23, 24, 23, 0.18);
+  --surface: #ebe7de;
 }
 
-/* Scroll Bar */
-/* width */
-.ScrollBar::-webkit-scrollbar {
-    width: 8px;
+.dark {
+  --light-bg: #f4f1ea;
+  --dark-bg: #171817;
+  --ink: #f4f1ea;
+  --muted: #a8a79d;
+  --line: rgba(244, 241, 234, 0.2);
+  --surface: #20221f;
 }
-  
-/* Track */
-.ScrollBar::-webkit-scrollbar-track {
-    background: transparent;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--light-bg); color: var(--ink); }
+::selection { background: var(--primary-color); color: var(--dark-bg); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise .65s cubic-bezier(.22,1,.36,1) both; }
+
+.ScrollBar::-webkit-scrollbar { width: 6px; }
+.ScrollBar::-webkit-scrollbar-track { background: transparent; }
+.ScrollBar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 999px; }
+
+@layer components {
+  .eyebrow { @apply text-[10px] font-bold uppercase tracking-[0.22em]; color: var(--muted); }
+  .rule { border-color: var(--line); }
+  .button-arrow { @apply inline-flex items-center gap-3 border px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] transition-all duration-300; border-color: var(--ink); }
+  .button-arrow:hover { background: var(--primary-color); transform: translateY(-2px); }
 }
-  
-/* Handle */
-.ScrollBar::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 5px;
-}
-  
-/* Handle on hover */
-.ScrollBar::-webkit-scrollbar-thumb:hover {
-    background: var(--dark-bg);
-}
-.dark .ScrollBar::-webkit-scrollbar-thumb:hover {
-    background: var(--light-bg);
-}
+.dark body { background: var(--dark-bg); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base { body { @apply antialiased; } }
+@layer utilities { .text-balance { text-wrap: balance; } }
